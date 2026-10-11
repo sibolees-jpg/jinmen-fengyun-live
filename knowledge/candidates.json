@@ -1,0 +1,691 @@
+{
+  "title": "津门风云实时版：八角色候选资料",
+  "date": "2026-09-27",
+  "status": "已按用户授权选择，接入实时知识版；演讲终版不变",
+  "domain_confirmation": "按用户原词启用新医科；新艺科资料暂缓，不混入。",
+  "baseline": "演讲终版保持不变",
+  "roles": [
+    {
+      "name": "李鸿章",
+      "legacy_actor_id": 1
+    },
+    {
+      "name": "梁启超",
+      "legacy_actor_id": 0
+    },
+    {
+      "name": "严复",
+      "legacy_actor_id": 2
+    },
+    {
+      "name": "蔡元培",
+      "legacy_actor_id": 4
+    },
+    {
+      "name": "李叔同",
+      "legacy_actor_id": 3
+    },
+    {
+      "name": "柏拉图",
+      "legacy_actor_id": 5
+    },
+    {
+      "name": "达芬奇",
+      "legacy_actor_id": 6
+    },
+    {
+      "name": "愚公",
+      "legacy_actor_id": 8
+    }
+  ],
+  "items": [
+    {
+      "id": "LH01",
+      "owner": "李鸿章",
+      "title": "筹议海防折",
+      "creator": "李鸿章",
+      "url": "https://zh.wikisource.org/wiki/籌議海防摺",
+      "access": "在线正文",
+      "priority": "首选",
+      "focus": "关于人才、经费、器械、制度条件与长期筹办的论述。",
+      "purpose": "建立先问资源、组织和落实条件的思考习惯。",
+      "note": "从奏折理解其判断方式；奏折中的自我辩护不能直接当成中立历史结论。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "LH01",
+          "section": "在线版本正文摘录，非《李文忠公全书》全卷",
+          "kind": "original",
+          "file": "texts/LH01.txt"
+        }
+      ]
+    },
+    {
+      "id": "LH02",
+      "owner": "李鸿章",
+      "title": "李文忠公全书·朋僚函稿（选读）",
+      "creator": "李鸿章；后人编次",
+      "url": "https://ctext.org/library.pl?if=gb&remap=gb&res=4214",
+      "access": "公开影印与目录；逐封待校",
+      "priority": "补充",
+      "focus": "先选办学、用人、筹款、技术引进相关书信，确定收信人和日期。",
+      "purpose": "补足对具体人事的权衡、沟通和办事口吻。",
+      "note": "不整库直接导入。电子识别稿有明显错字，应对照影印逐段校验；本轮未锁定具体信件。",
+      "alternate_url": "https://commons.wikimedia.org/wiki/Category:李文忠公全書",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "原文、具体篇目或现代版权版本尚未核妥，不以目录或简介冒充全文"
+    },
+    {
+      "id": "LQ01",
+      "owner": "梁启超",
+      "title": "新民说",
+      "creator": "梁启超",
+      "url": "https://zh.wikisource.org/wiki/新民說",
+      "access": "在线分章正文",
+      "priority": "首选",
+      "focus": "优先读论公德、论进步、论合群、论毅力等章节。",
+      "purpose": "突出公共行动、社会更新与青年责任，而非泛泛鼓励。",
+      "note": "",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "LQ01-五",
+          "section": "论公德",
+          "kind": "original",
+          "file": "texts/LQ01-五.txt"
+        },
+        {
+          "id": "LQ01-十一",
+          "section": "论进步",
+          "kind": "original",
+          "file": "texts/LQ01-十一.txt"
+        },
+        {
+          "id": "LQ01-十三",
+          "section": "论合群",
+          "kind": "original",
+          "file": "texts/LQ01-十三.txt"
+        },
+        {
+          "id": "LQ01-十五",
+          "section": "论毅力",
+          "kind": "original",
+          "file": "texts/LQ01-十五.txt"
+        }
+      ]
+    },
+    {
+      "id": "LQ02",
+      "owner": "梁启超",
+      "title": "少年中国说",
+      "creator": "梁启超",
+      "url": "https://zh.wikisource.org/wiki/少年中國說",
+      "access": "在线正文",
+      "priority": "首选",
+      "focus": "全文；关注论证推进、代际视角和有节奏的语言。",
+      "purpose": "保留昂扬、锋利、有号召力的声音。",
+      "note": "仅用这一篇容易让角色始终高喊口号，建议与《新民说》一起选。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "LQ02",
+          "section": "",
+          "kind": "original",
+          "file": "texts/LQ02.txt"
+        }
+      ]
+    },
+    {
+      "id": "LQ03",
+      "owner": "梁启超",
+      "title": "敬业与乐业",
+      "creator": "梁启超",
+      "url": "https://zh.wikisource.org/wiki/敬業與樂業",
+      "access": "在线正文",
+      "priority": "补充",
+      "focus": "全文；具体工作、专注和日常实践的论述。",
+      "purpose": "让宏大的改革关怀能够落回普通人的工作和学习。",
+      "note": "",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "LQ03",
+          "section": "",
+          "kind": "original",
+          "file": "texts/LQ03.txt"
+        }
+      ]
+    },
+    {
+      "id": "YF01",
+      "owner": "严复",
+      "title": "天演论",
+      "creator": "赫胥黎原著；严复译述并加按语",
+      "url": "https://zh.wikisource.org/wiki/天演論",
+      "access": "在线分章正文",
+      "priority": "首选",
+      "focus": "译例言、序及有严复按语的重点段落；译文和按语分别标记。",
+      "purpose": "建立概念辨析、比较、推论和反省的习惯。",
+      "note": "不能把赫胥黎原文都算作严复原创，也不能把它压成强者就该淘汰弱者的口号。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "YF01-preface",
+          "section": "严复自序（非赫胥黎正文）",
+          "kind": "original",
+          "file": "texts/YF01-preface.txt"
+        },
+        {
+          "id": "YF01-translation",
+          "section": "严复译例言（非赫胥黎正文）",
+          "kind": "original",
+          "file": "texts/YF01-translation.txt"
+        }
+      ]
+    },
+    {
+      "id": "YF02",
+      "owner": "严复",
+      "title": "群己权界论",
+      "creator": "约翰·斯图亚特·密尔原著；严复译",
+      "url": "https://zh.wikisource.org/wiki/群己權界論",
+      "access": "在线分章正文",
+      "priority": "首选",
+      "focus": "个人自由、公共干预、言论与社会边界；保留译者身份。",
+      "purpose": "形成先问边界、定义和依据的回应方式。",
+      "note": "当代隐私、数据与AI问题是据此进行的创作性讨论，不冒充严复本人的现代观点。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "YF02-preface",
+          "section": "严复译者序；原著为穆勒",
+          "kind": "original",
+          "file": "texts/YF02-preface.txt"
+        }
+      ]
+    },
+    {
+      "id": "YF03",
+      "owner": "严复",
+      "title": "论世变之亟",
+      "creator": "严复",
+      "url": "https://zh.wikisource.org/wiki/論世變之亟",
+      "access": "在线正文",
+      "priority": "补充",
+      "focus": "全文；中西比较与变化条件。",
+      "purpose": "与译作搭配，补充其本人面向时代变化的论述。",
+      "note": "",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "YF03",
+          "section": "",
+          "kind": "original",
+          "file": "texts/YF03.txt"
+        }
+      ]
+    },
+    {
+      "id": "CY01",
+      "owner": "蔡元培",
+      "title": "以美育代宗教说",
+      "creator": "蔡元培",
+      "url": "https://zh.wikisource.org/wiki/以美育代宗教說",
+      "access": "在线正文",
+      "priority": "首选",
+      "focus": "美感、情感教育和人的培养。",
+      "purpose": "突出他对教育目的、人格和公共文化的关注。",
+      "note": "保留历史语境；不转成今天排斥信仰的命令。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "CY01",
+          "section": "",
+          "kind": "original",
+          "file": "texts/CY01.txt"
+        }
+      ]
+    },
+    {
+      "id": "CY02",
+      "owner": "蔡元培",
+      "title": "就任北京大学校长之演说",
+      "creator": "蔡元培",
+      "url": "https://zh.wikisource.org/wiki/就任北京大學校長之演說",
+      "access": "在线正文",
+      "priority": "首选",
+      "focus": "大学宗旨、学问与求学态度。",
+      "purpose": "让角色从怎样办教育、怎样培养人来回应，区别于梁启超的社会动员。",
+      "note": "",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "CY02",
+          "section": "",
+          "kind": "original",
+          "file": "texts/CY02.txt"
+        }
+      ]
+    },
+    {
+      "id": "LS01",
+      "owner": "李叔同",
+      "title": "致刘质平等手札（候选选件）",
+      "creator": "李叔同／弘一",
+      "url": "https://www.zjam.org.cn/Site/Exbition/ExbitionDetail.aspx?etid=2290&type=4",
+      "access": "美术馆展览与手迹目录；未取得全套释文",
+      "priority": "首选",
+      "focus": "从馆藏手札中优先选教学、学习和日常关怀内容；逐件核对年代和收信人。",
+      "purpose": "从具体师生交流建立温和、精细、克制的表达。",
+      "note": "展页可检索到作品记录，直接抓取不稳定。这里只确认选材入口，不声称已读完手札或已完成释文。",
+      "alternate_url": "",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "原文、具体篇目或现代版权版本尚未核妥，不以目录或简介冒充全文"
+    },
+    {
+      "id": "LS02",
+      "owner": "李叔同",
+      "title": "送别（歌词）",
+      "creator": "李叔同作词",
+      "url": "https://zh.wikisource.org/zh/送別_(李叔同)",
+      "access": "在线作品",
+      "priority": "首选",
+      "focus": "作品的意象、停顿、留白和情绪节制。",
+      "purpose": "作为语言气质与审美样本，不充当全部思想资料。",
+      "note": "标注作词身份；不把旋律也归为李叔同原创。本清单不转载歌词。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "LS02",
+          "section": "仅李叔同原词；不含现代录音、编曲",
+          "kind": "original",
+          "file": "texts/LS02.txt"
+        }
+      ]
+    },
+    {
+      "id": "LS03",
+      "owner": "李叔同",
+      "title": "晚晴集",
+      "creator": "弘一选辑",
+      "url": "https://commons.wikimedia.org/wiki/File:SSID-12737069_晚晴集_2卷.pdf",
+      "access": "公开影印件",
+      "priority": "补充",
+      "focus": "少量关于自省、待人、修持的条目，保留引文来源。",
+      "purpose": "补充晚年弘一的修持维度。",
+      "note": "这是选辑，不把所收佛经祖语全当作其原创；与早年艺术教育材料按时期区分，避免每句都变成劝修行。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "LS03",
+          "section": "弘一选辑古代佛经祖语，保留条目原作者；非全部为弘一原创",
+          "kind": "anthology",
+          "file": "texts/LS03.txt"
+        }
+      ]
+    },
+    {
+      "id": "PL01",
+      "owner": "柏拉图",
+      "title": "理想国 / The Republic",
+      "creator": "柏拉图；Benjamin Jowett 英译",
+      "url": "https://www.gutenberg.org/ebooks/1497",
+      "access": "公开英文译本全文",
+      "priority": "首选",
+      "focus": "第II—III卷教育与艺术，第VI—VII卷知识、教育与洞穴比喻，第X卷艺术讨论。",
+      "purpose": "建立对正义、教育目标、表象和知识的追问。",
+      "note": "对话人物的发言要注明是谁说的；不把柏拉图写成现代开放教育的一致赞成者。中文现代译本另行选版。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "PL01",
+          "section": "Benjamin Jowett 旧英译；正文十卷，不含译者长导论",
+          "kind": "original",
+          "file": "texts/PL01.txt"
+        }
+      ]
+    },
+    {
+      "id": "PL02",
+      "owner": "柏拉图",
+      "title": "苏格拉底的申辩 / Apology",
+      "creator": "柏拉图；Benjamin Jowett 英译",
+      "url": "https://www.gutenberg.org/ebooks/1656",
+      "access": "公开英文译本全文",
+      "priority": "首选",
+      "focus": "全文；检验自以为知道的事、追问理由与承认无知。",
+      "purpose": "学习有针对性的提问，而非每句机械反问。",
+      "note": "作品描述苏格拉底的申辩，不能让柏拉图声称这是自己受审的亲历。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "PL02",
+          "section": "Benjamin Jowett 旧英译；排除译者导论",
+          "kind": "original",
+          "file": "texts/PL02.txt"
+        }
+      ]
+    },
+    {
+      "id": "PL03",
+      "owner": "柏拉图",
+      "title": "斐德若篇 / Phaedrus",
+      "creator": "柏拉图；Benjamin Jowett 英译",
+      "url": "https://www.gutenberg.org/ebooks/1636",
+      "access": "公开英文译本全文",
+      "priority": "补充",
+      "focus": "修辞、对话、书写与记忆的关系。",
+      "purpose": "为讨论AI回答是否意味着理解，提供可追问的思想起点。",
+      "note": "与AI的连接是本项目的当代类比，不称古人预言了大模型。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "PL03",
+          "section": "Benjamin Jowett 旧英译；排除译者导论",
+          "kind": "original",
+          "file": "texts/PL03.txt"
+        }
+      ]
+    },
+    {
+      "id": "DV01",
+      "owner": "达芬奇",
+      "title": "达芬奇笔记 / The Notebooks of Leonardo da Vinci",
+      "creator": "达芬奇；Jean Paul Richter 编译",
+      "url": "https://www.gutenberg.org/ebooks/5000",
+      "access": "公开英文编译本全文",
+      "priority": "首选",
+      "focus": "观察、透视、光影、身体、机械与水流相关笔记，按原条目保留出处。",
+      "purpose": "突出画、拆、测、试的具体思考方式。",
+      "note": "这是后人整理的笔记编译本，并非达芬奇生前按此目录完成的一部书；未经验证的设想仍标作设想。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "DV01",
+          "section": "Jean Paul Richter 编译，1883；从绘画论正文起，文内编者说明不可当作达芬奇原话",
+          "kind": "original",
+          "file": "texts/DV01.txt"
+        }
+      ]
+    },
+    {
+      "id": "DV02",
+      "owner": "达芬奇",
+      "title": "人体解剖手稿与研究（Royal Collection）",
+      "creator": "达芬奇手稿；Royal Collection 馆藏研究",
+      "url": "https://www.rct.uk/collection/stories/leonardo-in-the-royal-collection/leonardos-study-of-anatomy",
+      "access": "馆藏图像与研究文章；书籍有出版入口",
+      "priority": "首选",
+      "focus": "解剖手稿A、骨骼肌肉、心脏与绘图方法；区分手稿和现代馆方解释。",
+      "purpose": "连接艺术、工程和生命观察，是跨向医学人文的合适入口。",
+      "note": "古代解剖认识不当作现代诊疗依据。图片及现代图录使用范围另核。",
+      "alternate_url": "https://www.rct.uk/collection/publications/leonardo-da-vinci-the-mechanics-of-man",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "DV02",
+          "section": "解剖手稿A、骨骼肌肉、心脏与绘图方法；区分手稿和现代馆方解释。",
+          "kind": "editorial_brief",
+          "file": "texts/DV02.txt"
+        }
+      ]
+    },
+    {
+      "id": "YG01",
+      "owner": "愚公",
+      "title": "列子·汤问篇中的愚公移山",
+      "creator": "《列子》所载寓言；非愚公著作",
+      "url": "https://zh.wikisource.org/zh-hant/愚公移山",
+      "access": "在线原典正文",
+      "priority": "首选",
+      "focus": "愚公移山完整故事，包括家人疑问、劳动过程、智叟质疑与神话结尾。",
+      "purpose": "建立具体、朴实、重行动和长时间尺度的声音。",
+      "note": "愚公没有个人书单；机器可用、方法可改属于本项目创作延伸。不能把后世政治阐释或现代励志语直接写成他的原话。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "YG01",
+          "section": "仅愚公移山寓言段；人物无自著书籍",
+          "kind": "original",
+          "file": "texts/YG01.txt"
+        }
+      ]
+    },
+    {
+      "id": "NM01",
+      "owner": "共享·新医科",
+      "title": "国务院办公厅关于加快医学教育创新发展的指导意见（2020）",
+      "creator": "国务院办公厅",
+      "url": "https://app.www.gov.cn/govdata/gov/202009/23/463128/article.html",
+      "access": "官方全文",
+      "priority": "首选",
+      "focus": "新医科、医学＋X、医工医理医文交叉、健康促进与人才培养。",
+      "purpose": "为新医科建立准确的政策与概念背景；蔡元培、李鸿章、严复可按不同角度使用。",
+      "note": "这是2020年原始文件，时间目标须标明，不能自动表述为2026年已完成事项。",
+      "alternate_url": "",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "NM01",
+          "section": "新医科、医学＋X、医工医理医文交叉、健康促进与人才培养。",
+          "kind": "editorial_brief",
+          "file": "texts/NM01.txt"
+        }
+      ]
+    },
+    {
+      "id": "NM02",
+      "owner": "共享·新医科",
+      "title": "服务健康事业和健康产业人才培养引导性专业指南（2023）",
+      "creator": "教育部办公厅",
+      "url": "https://www.moe.gov.cn/srcsite/A08/moe_740/s3864/202401/t20240104_1098007.html",
+      "access": "官方发布页已检索；正文附件待取得",
+      "priority": "补充",
+      "focus": "医学交叉复合型人才与新专业方向；入库前逐项核对附件。",
+      "purpose": "帮助讨论落到人才培养和具体学科，而不是只说融合口号。",
+      "note": "文件生成日期2023-12-25，网页路径为2024年；本轮直接打开不稳定，不冒称已审读附件。",
+      "alternate_url": "",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "本批先用已核实的国务院新医科指导意见"
+    },
+    {
+      "id": "NM03",
+      "owner": "共享·新医科",
+      "title": "The Fundamental Role of the Arts and Humanities in Medical Education（2020）",
+      "creator": "AAMC",
+      "url": "https://store.aamc.org/the-fundamental-role-of-the-arts-and-humanities-in-medical-education.html",
+      "access": "官方免费PDF及说明页",
+      "priority": "首选",
+      "focus": "观察、不同视角、反思与艺术人文课程的实践方式。",
+      "purpose": "最适合本项目连接艺术与医学；蔡元培、李叔同、达芬奇各取不同切入点。",
+      "note": "报告标明教育与非商业使用条件；在线免费不等于任何方式都可再发布。",
+      "alternate_url": "https://store.aamc.org/downloadable/download/sample/sample_id/382/",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "NM03",
+          "section": "观察、不同视角、反思与艺术人文课程的实践方式。",
+          "kind": "editorial_brief",
+          "file": "texts/NM03.txt"
+        }
+      ]
+    },
+    {
+      "id": "NM04",
+      "owner": "共享·新医科",
+      "title": "Ethics and governance of AI for health: Guidance on large multi-modal models（2024）",
+      "creator": "WHO",
+      "url": "https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models",
+      "access": "官方介绍与报告链接",
+      "priority": "首选",
+      "focus": "医疗生成式AI的用途、错误、偏差、隐私与责任。",
+      "purpose": "为严复的边界辨析、柏拉图的知识追问、李鸿章的落地条件提供共同事实。",
+      "note": "用作技术与伦理讨论资料，不让历史角色提供个体诊断。",
+      "alternate_url": "https://iris.who.int/bitstream/handle/10665/375579/9789240084759-eng.pdf",
+      "decision": "已接入",
+      "enabled": true,
+      "ingested": true,
+      "ingestion": [
+        {
+          "id": "NM04",
+          "section": "医疗生成式AI的用途、错误、偏差、隐私与责任。",
+          "kind": "editorial_brief",
+          "file": "texts/NM04.txt"
+        }
+      ]
+    },
+    {
+      "id": "NM05",
+      "owner": "共享·新医科",
+      "title": "Narrative Medicine: Honoring the Stories of Illness（2006）",
+      "creator": "Rita Charon",
+      "url": "https://academic.oup.com/book/50891?login=false",
+      "access": "出版社摘要与章节目录；全文需合法取得",
+      "priority": "补充",
+      "focus": "优先第6章细读、第7章注意、表达与联结；再读患者、身体与自我。",
+      "purpose": "让回应具体地倾听人的叙述，适合李叔同、蔡元培和愚公的当代议题资料。",
+      "note": "本轮只核到出版社书目与摘要，不声称已读完整本书。",
+      "alternate_url": "",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "原文、具体篇目或现代版权版本尚未核妥，不以目录或简介冒充全文"
+    },
+    {
+      "id": "NM06",
+      "owner": "共享·新医科",
+      "title": "The Illness Narratives: Suffering, Healing, and the Human Condition",
+      "creator": "Arthur Kleinman",
+      "url": "https://www.hbglibrary.com/titles/arthur-kleinman/the-illness-narratives/9781541674608/",
+      "access": "出版社书目与简介；所列为2020新版，全文需合法取得",
+      "priority": "补充",
+      "focus": "疾病的生物层面与患病者的生活经验、文化处境。",
+      "purpose": "给角色补充患者、家庭与照护者的视角，避免只谈机器和效率。",
+      "note": "不把这个现代作者的论断写成历史角色原著；本轮没有取得全书。",
+      "alternate_url": "",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "原文、具体篇目或现代版权版本尚未核妥，不以目录或简介冒充全文"
+    },
+    {
+      "id": "NA01",
+      "owner": "备用·新艺科",
+      "title": "新艺科的新内涵",
+      "creator": "天津美术学院中国画学院发布文本",
+      "url": "https://zghxy.tjarts.edu.cn/info/1015/9041.htm",
+      "access": "学校官网正文",
+      "priority": "待确认方向",
+      "focus": "新艺科、全人教育、科学探索与艺术创造、社会责任。",
+      "purpose": "若新医科实指新艺科，此篇优先作为本项目的当代背景。",
+      "note": "保持文章作者与发布机构的区分；不写入任何历史角色的个人经历。",
+      "alternate_url": "",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "新艺科与原请求新医科不同，暂不混入"
+    },
+    {
+      "id": "NA02",
+      "owner": "备用·新艺科",
+      "title": "天津美术学院“新艺科”改革探索城校共生新模式",
+      "creator": "天津美术学院官网转载人民网报道",
+      "url": "https://www.tjarts.edu.cn/info/1409/17764.htm",
+      "access": "校方转载报道",
+      "priority": "待确认方向",
+      "focus": "五个内部子系统与城市、产业、文化和科技的关联。",
+      "purpose": "作为学校实践案例，帮助八人围绕具体变化讨论。",
+      "note": "这是实践报道，不能将其宣传性评价当作已经完成效果验证的证据。",
+      "alternate_url": "",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "新艺科与原请求新医科不同，暂不混入"
+    },
+    {
+      "id": "NA03",
+      "owner": "备用·新艺科",
+      "title": "UNESCO Framework for Culture and Arts Education 及实施指南",
+      "creator": "UNESCO",
+      "url": "https://www.unesco.org/en/articles/unesco-member-states-adopt-global-framework-strengthen-culture-and-arts-education?hub=86510",
+      "access": "2024官方框架入口；2025实施指南公开入口",
+      "priority": "待确认方向",
+      "focus": "文化与艺术教育、包容、终身学习；配合实施指南讨论怎样落实。",
+      "purpose": "给蔡元培、李叔同、梁启超补充当代国际教育语境。",
+      "note": "共享的是事实材料；三人的语气和价值排序仍独立。",
+      "alternate_url": "https://www.unesco.org/en/articles/unesco-framework-culture-and-arts-education-implementation-guidance?hub=779",
+      "decision": "暂缓",
+      "enabled": false,
+      "ingested": false,
+      "ingestion": [],
+      "reason": "新艺科与原请求新医科不同，暂不混入"
+    }
+  ]
+}

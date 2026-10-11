@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>津门风云 · 实时演示版 · 自动讨论台</title><link rel="stylesheet" href="live-director.css?v=927auto2"></head>
+<body>
+<header><div class="brand"><span class="seal">津</span><div><h1>津门风云 <span>实时演示版 · 自动讨论台</span></h1><p>听现场话题 · 自动选人 · 自动切景 · 持续接话</p></div></div><a class="button" href="index.html" target="jinmen-realtime-stage">打开大屏 ↗</a></header>
+<main>
+ <section class="toolbar"><div><span id="connection" class="badge">等待大屏连接</span><span id="current-scene">尚未上屏</span></div><span id="mode" class="badge">尚未开始</span></section>
+ <section class="panel auto-panel">
+  <h2>打开语音，交给他们讨论</h2><p class="muted">说出第一个话题后，默认由两位角色从不同角度回应，并自动切换适合的画面。你停顿时由本组继续讨论，有新发言时可以重新选人；未参与者不会读到上一组聊天。</p>
+  <div class="mic-row"><button id="mic" class="primary">开始自动讨论</button><select id="microphone" aria-label="麦克风"><option value="">系统默认麦克风</option></select><meter id="level" min="0" max="1" value="0" aria-label="声音强度"></meter></div>
+  <p id="memory-health" class="muted" role="status">记忆：自动保存已开启</p><p id="speech-status" class="muted">正在读取豆包流式语音配置…</p><p id="status" role="status">只需点击“开始自动讨论”，无需另开接话或字幕开关。</p>
+  <div id="transcript" class="transcript">现场识别内容会显示在这里。</div>
+  <details class="typed-topic"><summary>也可以输入一个话题</summary><textarea id="input" rows="2" maxlength="2000" placeholder="输入现场正在讨论的问题…" aria-label="讨论话题"></textarea><div class="actions"><button id="generate">用此话题开始自动讨论</button><span class="muted">语音已开启时，输入的新话题也会优先接入</span></div></details>
+ </section>
+ <section class="panel"><div class="section-head"><h2>正在讨论</h2><span id="round-count" class="muted">等待现场话题</span></div><div id="onstage" class="empty">角色接话、气泡和场景都会自动上屏。</div></section>
+ <details class="panel" id="manual-tools"><summary>临时手动干预 · 需要时再展开</summary><p class="muted">开始自动讨论时，自动选人、选景和上屏都会一并开启。使用下列控件会暂停自动讨论；重新点击上方按钮即可恢复。</p>
+ <div class="actions"><button id="cancel">暂停自动／取消待发</button><button id="clear" class="danger">清空气泡</button></div>
+ <div class="workspace">
+  <div class="left-column">
+   <section class="panel"><div class="section-head"><h2>谁来接话</h2><button id="auto-actors" class="small">自动选角</button></div><p id="actor-hint" class="muted"></p><div id="actors" class="actor-grid"></div></section>
+   <section class="panel"><div class="section-head"><h2>接话预览与编辑</h2><button id="manual" class="small">手写接话</button></div><div class="actions"><button id="manual-generate">按输入话题生成一轮</button><label><input id="auto-publish" type="checkbox" checked>这轮自动上屏</label></div><div id="draft"><div class="empty">每条接话都可以手动编辑。</div></div><div id="publish-controls" hidden><label class="field-label" for="reply-scene">这轮上屏场景</label><select id="reply-scene"></select><div class="actions"><button id="publish" class="primary">将这轮接话上屏</button><span id="draft-note" class="muted"></span></div></div></section>
+  </div>
+  <div class="right-column">
+   <section class="panel scene-panel"><div class="section-head"><h2>选择场景</h2><span id="scene-count" class="muted"></span></div><label class="field-label" for="scene-mode">自动按人物匹配，或手动锁定场景</label><select id="scene-mode"><option value="">自动匹配场景</option></select><div id="scenes" class="scene-grid"></div></section>
+  </div>
+ </div>
+ </details>
+ <details class="panel" id="memory-panel"><summary>长期记忆 · 按人物和日期查阅</summary><p class="muted">从本版启用后自动保存现场确认发言与实际显示的角色接话。按北京时间归档，刷新或重启仍保留。现场发言者暂不区分真人身份。你可查阅全部，角色只读取自己参与的对话；切景不会增加记忆权限。</p><p id="memory-status" role="status">正在读取记忆状态…</p><p id="memory-save-status" class="muted"></p><div class="memory-filters"><label>人物<select id="memory-actor" aria-label="记忆人物"><option value="">全部人物与现场发言</option><option value="-1">现场发言者</option></select></label><label>日期<input id="memory-date" type="date" aria-label="记忆日期"></label><button id="memory-search">查询记忆</button><a id="memory-export" class="button" href="/api/memory/export" download>导出全部记忆</a></div><div id="memory-results"></div><button id="memory-more" hidden>更早记录</button></details>
+ <details class="panel"><summary>本场记录</summary><ol id="history"></ol></details>
+ <details class="panel"><summary>连接与资料</summary><p id="provider" class="muted">读取模型状态…</p><p id="knowledge" class="muted"></p><p id="latency" class="muted"></p><form id="model-form"><label class="field-label" for="model-key">更新 DeepSeek 密钥</label><input id="model-key" type="password" autocomplete="off" placeholder="已配置时无需填写"><button class="small">保存密钥</button></form><form id="speech-form"><label class="field-label" for="speech-key">豆包流式语音 API Key</label><input id="speech-key" type="password" autocomplete="off" placeholder="已配置时无需填写"><button class="small">保存语音密钥</button></form></details>
+</main>
+<footer>实时版 · 默认双人讨论 · 点名单独提问可单人回应 · 气泡错开出现 · 演讲终版独立保留</footer>
+<script src="stage-channel.js"></script><script src="speech-capture.js"></script><script src="live-session.js"></script><script src="auto-discussion.js"></script><script src="memory-client.js"></script><script src="live-director.js?v=1011doubao1"></script>
+</body></html>

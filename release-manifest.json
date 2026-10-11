@@ -1,0 +1,24 @@
+{
+  "name": "津门风云 · 现场接话自动讨论版",
+  "edition": 2,
+  "snapshotDate": "2026-10-11",
+  "defaultMode": "realtime",
+  "scenes": 25,
+  "actors": 8,
+  "apiProviders": {
+    "speech": "Doubao / Volcengine Seed ASR streaming",
+    "reply": "DeepSeek"
+  },
+  "apiKeysIncluded": false,
+  "memoryDataIncluded": false,
+  "validation": {
+    "command": "npm test",
+    "passed": 160,
+    "failed": 0,
+    "skippedFixedManuscriptTests": 2
+  },
+  "savedDataSha256": {
+    "script": "5e6723640d344bbc6d7d05a0399d85474821bef70e504479f9cb019bceeee148",
+    "scenes": "052141aded27b78f430e810a2efa927b98bcb0b245465ada9f91e4949b016c8c"
+  }
+}

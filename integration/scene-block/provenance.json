@@ -1,0 +1,173 @@
+{
+  "repository": "salty-jpg/jinmen-fengyun-stage",
+  "sourceRevision": "6b029d24c321df2fa91bf40a4aaf0d528f3ea440",
+  "sourceTime": "2026-09-25T23:14:11+08:00",
+  "baseline": "v42 2026-09-25 18:17",
+  "mapping": [
+    {
+      "code": "S0",
+      "sourceSceneId": "sc-doc924-standby",
+      "sourceName": "Q本分镜 1",
+      "mapName": "天津总览 · 暖场"
+    },
+    {
+      "code": "A1",
+      "sourceSceneId": "sc-doc924-1",
+      "sourceName": "Q本分镜 2",
+      "mapName": "金刚公园"
+    },
+    {
+      "code": "A2",
+      "sourceSceneId": "sc-q925-b-2",
+      "sourceName": "Q本分镜 3",
+      "mapName": "金刚公园"
+    },
+    {
+      "code": "B1",
+      "sourceSceneId": "sc-doc924-7",
+      "sourceName": "Q本分镜 4",
+      "mapName": "杨柳青书斋"
+    },
+    {
+      "code": "C1",
+      "sourceSceneId": "sc-q925-b-3",
+      "sourceName": "Q本分镜 5",
+      "mapName": "金刚公园"
+    },
+    {
+      "code": "D1",
+      "sourceSceneId": "sc-doc924-2",
+      "sourceName": "Q本分镜 6",
+      "mapName": "意式街景"
+    },
+    {
+      "code": "E1",
+      "sourceSceneId": "sc-doc924-9",
+      "sourceName": "Q本分镜 7",
+      "mapName": "车马街景"
+    },
+    {
+      "code": "F1",
+      "sourceSceneId": "sc-q925-c-2",
+      "sourceName": "Q本分镜 8",
+      "mapName": "意式街景"
+    },
+    {
+      "code": "G1",
+      "sourceSceneId": "sc-doc924-11",
+      "sourceName": "Q本分镜 9",
+      "mapName": "水榭庭院"
+    },
+    {
+      "code": "H1",
+      "sourceSceneId": "sc-doc924-5",
+      "sourceName": "Q本分镜 10",
+      "mapName": "女师校园"
+    },
+    {
+      "code": "H2",
+      "sourceSceneId": "sc-q925-f-2",
+      "sourceName": "Q本分镜 11",
+      "mapName": "女师校园"
+    },
+    {
+      "code": "I1",
+      "sourceSceneId": "sc-doc924-4",
+      "sourceName": "Q本分镜 12",
+      "mapName": "府门校场"
+    },
+    {
+      "code": "J1",
+      "sourceSceneId": "sc-doc924-6",
+      "sourceName": "Q本分镜 13",
+      "mapName": "仪式广场"
+    },
+    {
+      "code": "K1",
+      "sourceSceneId": "sc-doc924-12",
+      "sourceName": "Q本分镜 14",
+      "mapName": "古典临水书房"
+    },
+    {
+      "code": "L1",
+      "sourceSceneId": "sc-q925-g-2",
+      "sourceName": "Q本分镜 15",
+      "mapName": "仪式广场"
+    },
+    {
+      "code": "M1",
+      "sourceSceneId": "sc-doc924-3",
+      "sourceName": "Q本分镜 16",
+      "mapName": "中式室内"
+    },
+    {
+      "code": "N1",
+      "sourceSceneId": "sc-doc924-8",
+      "sourceName": "Q本分镜 17",
+      "mapName": "城市广场"
+    },
+    {
+      "code": "O1",
+      "sourceSceneId": "sc-doc924-10",
+      "sourceName": "Q本分镜 18",
+      "mapName": "总督府花园"
+    },
+    {
+      "code": "P1",
+      "sourceSceneId": "sc-q925-m-2",
+      "sourceName": "Q本分镜 19",
+      "mapName": "古典临水书房"
+    },
+    {
+      "code": "P2",
+      "sourceSceneId": "sc-q925-m-3",
+      "sourceName": "Q本分镜 20",
+      "mapName": "古典临水书房"
+    },
+    {
+      "code": "Q1",
+      "sourceSceneId": "sc-q925-c-3",
+      "sourceName": "Q本分镜 21",
+      "mapName": "意式街景"
+    },
+    {
+      "code": "R1",
+      "sourceSceneId": "sc-q925-h-2",
+      "sourceName": "Q本分镜 22",
+      "mapName": "杨柳青书斋"
+    },
+    {
+      "code": "S1",
+      "sourceSceneId": "sc-q925-n-1",
+      "sourceName": "Q本分镜 23",
+      "mapName": "水榭野亭 · 桥上近景"
+    },
+    {
+      "code": "T1",
+      "sourceSceneId": "sc-doc924-13",
+      "sourceName": "终场 · 校园返场",
+      "mapName": "女师校园 · 终场返场"
+    }
+  ],
+  "T2": "T1 visual copy",
+  "files": [
+    "plane-model.js",
+    "plane-renderer.js",
+    "plane-shaders.js",
+    "scene-objects.js",
+    "water-surface.js",
+    "boat-motion.js",
+    "environment-animation-data.js",
+    "actor-animation.js",
+    "actor-animation-player.js",
+    "expression-portrait.js",
+    "motion.js",
+    "nameplates.js",
+    "theatre-view.js",
+    "stage-layout.js",
+    "plane.css",
+    "stage.css"
+  ],
+  "assets": 331,
+  "unresolvedUnusedExpressionRefs": []
+}

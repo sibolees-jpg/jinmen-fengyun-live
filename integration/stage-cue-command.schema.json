@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StageChannel 分场景触发命令 v1（待接入）",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "command"
+    },
+    "action": {
+      "const": "apply-stage-cue"
+    },
+    "protocolVersion": {
+      "const": 1
+    },
+    "eventId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "cueId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "epoch": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "scriptRevision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "manifestRevision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "stageId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "sentence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "blockIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sentenceId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "blockIndex",
+        "sentenceId"
+      ]
+    },
+    "actions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scene": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sceneId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            "presetId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "required": [
+            "sceneId",
+            "presetId"
+          ]
+        },
+        "preset": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "presetId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "required": [
+            "presetId"
+          ]
+        },
+        "reply": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "groupId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "required": [
+            "groupId"
+          ]
+        }
+      },
+      "required": [],
+      "minProperties": 1,
+      "not": {
+        "required": [
+          "scene",
+          "preset"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "action",
+    "protocolVersion",
+    "eventId",
+    "cueId",
+    "epoch",
+    "seq",
+    "scriptRevision",
+    "manifestRevision",
+    "stageId",
+    "sentence",
+    "actions"
+  ],
+  "description": "scene 为跨组、preset 为同组；两者均整体应用序号对应的完整场景与人物配置，reply 独立去重。"
+}

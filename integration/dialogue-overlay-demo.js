@@ -1,0 +1,4 @@
+const host=document.getElementById('host'),layer=JinmenDialogue.mount(host);let count=0,shown=true;
+const items=[{id:0,key:'demo-1',text:'这是一整段人物接话，独立气泡层可以覆盖宿主画面，同时保留完整的文字。',x:576,y:470,config:{manual:true,x:32,y:8,tailBase:50}},{id:1,key:'demo-2',text:'气泡不修改原界面的样式，也不拦截下方按钮。正式时序由接话控制器传入。',x:1024,y:490,config:{manual:true,x:68,y:17,fill:'#ffffff',widthScale:1.4}}];
+function render(){layer.update({width:1280,height:720,displayWidth:host.clientWidth,items:shown?items:[],now:performance.now(),obstacles:[{left:512,top:470,width:128,height:170},{left:960,top:490,width:128,height:170}]});}
+document.getElementById('underlying').onclick=()=>document.getElementById('result').textContent='宿主按钮点击 '+(++count)+' 次';document.getElementById('show').onclick=()=>{shown=true;render();};document.getElementById('clear').onclick=()=>{shown=false;render();};new ResizeObserver(render).observe(host);render();

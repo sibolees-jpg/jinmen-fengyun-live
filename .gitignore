@@ -1,0 +1,22 @@
+node_modules/
+.runtime/
+runtime/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+tmp/
+
+# Private installation data and local exports
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pid
+*.pem
+*.key
+.DS_Store
+work/
+verification/
+validation/

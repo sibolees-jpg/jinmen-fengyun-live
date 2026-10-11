@@ -1,0 +1,70 @@
+{
+  "su-dongpo": {
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "content_bounds": [
+      135,
+      53,
+      909,
+      1479
+    ],
+    "original_preserved": true
+  },
+  "shakespeare": {
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "content_bounds": [
+      50,
+      83,
+      960,
+      1501
+    ],
+    "original_preserved": true
+  },
+  "galileo": {
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "content_bounds": [
+      67,
+      146,
+      948,
+      1474
+    ],
+    "original_preserved": true
+  },
+  "yu-gong": {
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "content_bounds": [
+      127,
+      137,
+      984,
+      1451
+    ],
+    "original_preserved": true
+  }
+}

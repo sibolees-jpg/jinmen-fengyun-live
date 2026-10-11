@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {backgroundProfile} from '../backend/background-profiles.mjs';
+const image='d7f761b255afd2bebf983a7c06d6ee3268d5e212ac86cca1d3846592f952e40b.png';
+test('background contours match exact asset identity and cannot leak between requests',()=>{const p=backgroundProfile(image);assert.equal(p.occluders.length,5);assert.equal(p.width,3413);p.occluders[0].polygon[0][0]=0;assert.equal(backgroundProfile(image).occluders[0].polygon[0][0],23.3);assert.equal(backgroundProfile('other.png'),null);for(const o of p.occluders)for(const xy of o.polygon)assert.ok(xy.every(n=>n>=0&&n<=100));});

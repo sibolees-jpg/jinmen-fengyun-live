@@ -1,0 +1,14 @@
+/* Isolated to the trial renderer; the v42 bubble classes keep their original styles. */
+.colleague-bubble .bubble-text{display:flex;writing-mode:horizontal-tb!important;max-height:none!important;overflow:visible!important;line-height:1.6!important;letter-spacing:.06em!important}
+.colleague-bubble .caption-prose{display:block;flex:none;writing-mode:horizontal-tb;text-orientation:mixed;direction:ltr;text-align:left;white-space:normal;overflow-wrap:anywhere;line-height:1.6;letter-spacing:.06em}
+.colleague-bubble .caption-line{display:block;white-space:normal;min-height:1.6em;line-height:1.6}
+.colleague-bubble .caption-glyph{display:inline-block;opacity:0}.colleague-bubble .caption-glyph.revealed{opacity:1}.colleague-bubble .caption-glyph.pop{animation:colleague-glyph-in 140ms ease-out both}
+@keyframes colleague-glyph-in{from{transform:translateY(3px);opacity:.25}to{transform:translateY(0);opacity:1}}
+.colleague-bubble[data-connected=true]{background:transparent!important;border-color:transparent!important;box-shadow:none}
+.colleague-bubble .caption-card{position:relative;display:block;flex:none;box-sizing:border-box}
+.colleague-bubble .caption-card+.caption-card:before{content:'';position:absolute;right:-20px;top:50%;width:20px;height:8px;border-top:1px solid var(--border,#29271f);border-bottom:1px solid var(--border,#29271f);background:var(--paper,#f5e7ba)}
+@media(prefers-reduced-motion:reduce){.colleague-bubble .caption-glyph.pop{animation:none}}
+
+.colleague-bubble .caption-vertical{display:flex;flex:none;flex-direction:row-reverse;writing-mode:horizontal-tb;letter-spacing:.12em;line-height:1.12}
+.colleague-bubble .caption-vertical .caption-column{display:block;flex:none;writing-mode:vertical-rl;text-orientation:upright;white-space:pre;line-height:1.25;letter-spacing:.12em}
+.colleague-bubble .caption-vertical .caption-glyph{display:inline;vertical-align:baseline}

@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>独立气泡层接入样例</title>
+<style>body{margin:24px;background:#eee9dc;font:16px sans-serif;color:#362c22}h1{font-size:22px}#host{position:relative;aspect-ratio:16/9;width:min(1100px,100%);background:#d7e0d9;border:1px solid #ccc}#host .person{position:absolute;left:40%;top:65%;width:10%;height:23%;background:#a5b4a9;text-align:center;padding-top:2%;box-sizing:border-box}#host .person:nth-child(2){left:75%;top:68%}#underlying{position:absolute;left:8%;top:8%}button{padding:10px;margin:8px}#host .bubble{color:red;display:none!important}/* Deliberately conflicting colleague rule; shadow bubbles remain visible. */</style>
+<h1>独立气泡层接入样例</h1><p>下面是用于联调的示例界面。样式和按钮属于宿主页面，气泡在独立层中显示。</p>
+<button id="show">显示两人接话</button><button id="clear">收起气泡</button><span id="result">宿主按钮点击 0 次</span>
+<div id="host"><div class="person">人物甲</div><div class="person">人物乙</div><button id="underlying">宿主按钮（气泡层下方）</button></div>
+<script src="dialogue-overlay.bundle.js"></script><script src="dialogue-overlay-demo.js"></script></html>

@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "0-A",
+      "actor": 0,
+      "name": "梁启超 A · 背手西装站姿",
+      "idle": "assets/actor-animation-library/d1026ee7dfe1c5075633002dbaad22c8a0a6b44c6fd2871697998418f5743ddd.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.27759009,
+        0.05236486,
+        0.70833333,
+        0.96114865
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": false
+    },
+    {
+      "id": "1-A",
+      "actor": 1,
+      "name": "李鸿章 A · 勋章拢手站姿",
+      "idle": "assets/actor-animation-library/2513a247e3ee50e3a405f3aa6e6f38d6683c816fb75eff0212b6ed1b807cadd7.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.25506757,
+        0.02111486,
+        0.71283784,
+        0.9683277
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": false
+    },
+    {
+      "id": "1-B",
+      "actor": 1,
+      "name": "李鸿章 B · 正面礼服站姿",
+      "idle": "assets/actor-animation-library/fbb4f0f5fb1b05bd07061bb7fa3dd69f26830229cbc7caad5331bd4817a82889.png",
+      "width": 1400,
+      "height": 2000,
+      "bounds": [
+        0.20428571,
+        0.08,
+        0.81785714,
+        0.9505
+      ],
+      "mobility": "standing",
+      "animation": {
+        "version": 1,
+        "name": "李鸿章 B · 正面礼服站姿",
+        "width": 1400,
+        "height": 2000,
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "bounds": [
+          0.20428571,
+          0.08,
+          0.81785714,
+          0.9505
+        ],
+        "base": "assets/actor-animation-library/fbb4f0f5fb1b05bd07061bb7fa3dd69f26830229cbc7caad5331bd4817a82889.png",
+        "clips": {
+          "idle": [
+            "assets/actor-animation-library/fbb4f0f5fb1b05bd07061bb7fa3dd69f26830229cbc7caad5331bd4817a82889.png"
+          ],
+          "blink": [
+            "assets/actor-animation-library/7b3220c2afe6b6436917586b6c288b4522ebe855b6242d4dd499a04fdec3565b.png"
+          ],
+          "talk": [
+            "assets/actor-animation-library/2560160fc5e3f4a7a4ab4ec20f66a780f45578e65a5067481b8b6b7a49cc398e.png"
+          ],
+          "talkBlink": [
+            "assets/actor-animation-library/45eecd38f85aa16016227f274a398876ac844c181df446ab0d3b828e1f51bedd.png"
+          ],
+          "breath": [
+            "assets/actor-animation-library/fbb4f0f5fb1b05bd07061bb7fa3dd69f26830229cbc7caad5331bd4817a82889.png",
+            "assets/actor-animation-library/166e4e4f7cb0e645d572c5209194df3e6bf77e16f109e83d401136c67d7cfbca.png",
+            "assets/actor-animation-library/41264d879e10c98330e053fbe1d88842d16fbd31c6da9a9e4c4add131570edde.png",
+            "assets/actor-animation-library/d62415cc75ce13f1047a8160b0a88c805d0bfb5bc15bebf84944d29b002b7bb8.png",
+            "assets/actor-animation-library/f0794ea9e632bcb578ba032e9120754900bbc786e1e061cb0b656a9f5573bd64.png",
+            "assets/actor-animation-library/0a4cb39da22d8195c8ddd7220c7e7f3a457f3783176c592b1ab1566f781cb592.png",
+            "assets/actor-animation-library/11bf9f34fdffc4896fe2f1e6249a2e269be064ea1f246d42639fbc34fa474024.png",
+            "assets/actor-animation-library/0a4cb39da22d8195c8ddd7220c7e7f3a457f3783176c592b1ab1566f781cb592.png",
+            "assets/actor-animation-library/f0794ea9e632bcb578ba032e9120754900bbc786e1e061cb0b656a9f5573bd64.png",
+            "assets/actor-animation-library/d62415cc75ce13f1047a8160b0a88c805d0bfb5bc15bebf84944d29b002b7bb8.png",
+            "assets/actor-animation-library/41264d879e10c98330e053fbe1d88842d16fbd31c6da9a9e4c4add131570edde.png",
+            "assets/actor-animation-library/166e4e4f7cb0e645d572c5209194df3e6bf77e16f109e83d401136c67d7cfbca.png"
+          ],
+          "walkLeft": [
+            "assets/actor-animation-library/2127d303c9aba15e014ef729184dddd0d84cb270652afb7a83139a09f47d165a.png",
+            "assets/actor-animation-library/007e5fd575c86677259c09cee71beb5e622f51656f03bb06c7050ad1fb17740f.png",
+            "assets/actor-animation-library/5eda8f3aec80d10c6608d2cd1fdbcde7cf8b03bc35723facc35e96390f4db873.png",
+            "assets/actor-animation-library/2d1e721a4742e0b07924097c0002124079de4ce68869e2848a91bdc7dd748044.png",
+            "assets/actor-animation-library/2fef6d52132b3b8ef1dd4f3212af98d311e1045bf912565b80579a5e9ee76181.png",
+            "assets/actor-animation-library/8848d33f1bc21aee59642732d1ea02b6d495a26ba10c863a1e7f677f78a0a3de.png",
+            "assets/actor-animation-library/bdb54229d10d051489b5e4c04d95935a1c72047ff50001fab199f9a973acb251.png",
+            "assets/actor-animation-library/68c794bd0e036b83db8e4b9e122becb406511fc565631de91d3ca757d1165057.png",
+            "assets/actor-animation-library/e8c2c604d0af93c62ce306550bc7ba58b4b798338d3200bb973793931432b4d4.png",
+            "assets/actor-animation-library/e1a11cdf78ad2e56e834077f885ba470ae025c6ac53cba3fb7e443d2b2434462.png",
+            "assets/actor-animation-library/0aaa1c6428932b666228293c688c259a9295bdb8aa1dbcaa3eef022904fde970.png",
+            "assets/actor-animation-library/8569cf5796f0b9822b10ab9051a3acc6112c3600a152980df713ceb2d11b1891.png",
+            "assets/actor-animation-library/7ea4571fe97f0e8cb0bd5e6c2f06aeecbfafb02ab10787c5c3a48ce371761388.png",
+            "assets/actor-animation-library/b2f3da6eca07e1762056004d01cda18d39dff87bcc5075c83acd77565d843fcf.png",
+            "assets/actor-animation-library/b4754c6cc1646318e526237a5e94dbd90b0da7fee00d7bb3997c99dbebd099d7.png",
+            "assets/actor-animation-library/f18736bc6a56fba10893f34fba45793c21510246765678576e6cf9f0d954cbde.png"
+          ],
+          "walkRight": [
+            "assets/actor-animation-library/e7d0ee518bad4f03985117e15bdb60d67dd803200c23f76dca2e4ba423e03123.png",
+            "assets/actor-animation-library/db502d0ec25a20d8b1bb7bfdf2172638ad8af7a4a97d4a060457c5eb29a4ef0d.png",
+            "assets/actor-animation-library/3731cd24df48e43ae01fd6ca00a662d78cc111497a5cd1dbf748eed436a5d796.png",
+            "assets/actor-animation-library/ea5f09e1f154066e63329e55937c07e3d7d19f5cb14fcf8e876bb292740acbc9.png",
+            "assets/actor-animation-library/ebe39d2f0f175929fdd045b65b62e4d0d381b610e22055210427a143142adb11.png",
+            "assets/actor-animation-library/130ad157dd3d5e333090768078a9fd7a9900e507ac5d6623a98abaf064f223bb.png",
+            "assets/actor-animation-library/b2fca05108cbd263c91af1d147655e6b84862389a30bb9a1c2c209a725ad2d27.png",
+            "assets/actor-animation-library/fc74f3daece5caac07e34a595f2ed4f96de5a54086662d20aa8a24d2b01f5e5f.png",
+            "assets/actor-animation-library/bda40b25f89f1a5f6170991655a435f16bc3ae679f2852e9240e20a3d2c7cf4a.png",
+            "assets/actor-animation-library/38f6eefef928d8942ba02dcb4d8715cb2f14110bf17eaded778138286e847a43.png",
+            "assets/actor-animation-library/bdc3f13a267a3f9ab4843bc81104389828b6eeadc4099513598ea365588b6200.png",
+            "assets/actor-animation-library/054fea6237956e7b3962add1a212b0279c45fdbe89254a9378ec2aa2c44c3396.png",
+            "assets/actor-animation-library/8261835887a4c3126c1433aa8e9f0f566ddfe997ba69f79a310eb315295a1715.png",
+            "assets/actor-animation-library/39b291f4b0b069f6ee883c2560b26cf15fe96256dbded2e42209907c2dcadc97.png",
+            "assets/actor-animation-library/aba8b1a787cc2cf705635818d52389f108e2f780b49b3ba1fd622a2ee867fe11.png",
+            "assets/actor-animation-library/62dc9be2649bb4f88e4ffbdc5423ad474e40bee263a320b5ed016dd2af6198f3.png"
+          ]
+        },
+        "breathMs": 4800,
+        "walkFrameMs": 90
+      },
+      "hasProps": false
+    },
+    {
+      "id": "2-A",
+      "actor": 2,
+      "name": "严复 A · 背手侧身站姿",
+      "idle": "assets/actor-animation-library/dcf7b0e05140b45bddd25c1f0d7af068ea23758c43b736146113c9ca2b955ecb.png",
+      "width": 1344,
+      "height": 3136,
+      "bounds": [
+        0.21949405,
+        0.05931122,
+        0.81994048,
+        0.96173469
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": false
+    },
+    {
+      "id": "2-B",
+      "actor": 2,
+      "name": "严复 B · 方帽圆镜站姿",
+      "idle": "assets/actor-animation-library/67c2edb9d2f12855de593474ed2c4975cf90409883af577eca034806d4fb3856.png",
+      "width": 1400,
+      "height": 2000,
+      "bounds": [
+        0.29285714,
+        0.08,
+        0.69214286,
+        0.95
+      ],
+      "mobility": "standing",
+      "animation": {
+        "version": 1,
+        "name": "严复 B · 方帽圆镜站姿",
+        "width": 1400,
+        "height": 2000,
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "bounds": [
+          0.29285714,
+          0.08,
+          0.69214286,
+          0.95
+        ],
+        "base": "assets/actor-animation-library/67c2edb9d2f12855de593474ed2c4975cf90409883af577eca034806d4fb3856.png",
+        "clips": {
+          "idle": [
+            "assets/actor-animation-library/67c2edb9d2f12855de593474ed2c4975cf90409883af577eca034806d4fb3856.png"
+          ],
+          "blink": [
+            "assets/actor-animation-library/96cde430dcd14e0ea5a265db5f4fe07fdad3e42ffa72b52ada3c3254ebce1d3f.png"
+          ],
+          "talk": [
+            "assets/actor-animation-library/90a6b32d95943256a755e31c24690394f8b0784502434fc68767b203d06a65b6.png"
+          ],
+          "talkBlink": [
+            "assets/actor-animation-library/ce1c4b600189b073b3ae1257f85de2a9f6011e47a4e422e21cd9e3a447449c86.png"
+          ],
+          "breath": [
+            "assets/actor-animation-library/67c2edb9d2f12855de593474ed2c4975cf90409883af577eca034806d4fb3856.png",
+            "assets/actor-animation-library/71a734786df029f7131e706ccccca6bff964655dc01f95b921eea2d401ccc7a6.png",
+            "assets/actor-animation-library/15b6762759e48e583a5a7af7cb07049bd53ec3e71e57d26eacb3a8a2ba1e491f.png",
+            "assets/actor-animation-library/9aa0730ed51cb887b90cafb118da40c3754e817fea8c8469039356103ab5ad83.png",
+            "assets/actor-animation-library/f31eae31450cc722bf4dccf54b28254567d6d1134240d3ad72537f2c457f3061.png",
+            "assets/actor-animation-library/5d9ea45b4aed03ee3fa1321ae69dada3cf3f5aa814eb55d7b6b4552b2fca71bf.png",
+            "assets/actor-animation-library/1ff620c42dceb8b39e6d654e4cceec324b5492e290e9aa70a97e6a53d2a07a95.png",
+            "assets/actor-animation-library/5d9ea45b4aed03ee3fa1321ae69dada3cf3f5aa814eb55d7b6b4552b2fca71bf.png",
+            "assets/actor-animation-library/f31eae31450cc722bf4dccf54b28254567d6d1134240d3ad72537f2c457f3061.png",
+            "assets/actor-animation-library/9aa0730ed51cb887b90cafb118da40c3754e817fea8c8469039356103ab5ad83.png",
+            "assets/actor-animation-library/15b6762759e48e583a5a7af7cb07049bd53ec3e71e57d26eacb3a8a2ba1e491f.png",
+            "assets/actor-animation-library/71a734786df029f7131e706ccccca6bff964655dc01f95b921eea2d401ccc7a6.png"
+          ],
+          "walkLeft": [
+            "assets/actor-animation-library/034f403a3ef4c679f1124f122d983a44450b24663580cf334826b6e43ae256b9.png",
+            "assets/actor-animation-library/8959e8e5c5468872f6c98d78aa20329543117690ff209c26558e59e27aafa95e.png",
+            "assets/actor-animation-library/f5490f5b887697a412e8a5b16abc7257530322813aaffc2f1618aea0c1598612.png",
+            "assets/actor-animation-library/fb7d64db1ae6aab62c26577e2711bed46a448ff19a7bbaf3f60d66480ea6f8bb.png",
+            "assets/actor-animation-library/85efbb763e9fe10e41a0b7201e33eff23d8a6d45e8958354fc87d3f34477d42f.png",
+            "assets/actor-animation-library/7dccecffbb5ff61b69317e44b94c0a1a26e930530da0ce11c600d8ed023132b6.png",
+            "assets/actor-animation-library/0d99f7d5c5ebbc0aee6e489a003ae533c306094547371ae01fdc774159212cd7.png",
+            "assets/actor-animation-library/6bef0bee1122995c94335d359446cb0d6817cfcf5b33b40de7973ea009e6baff.png",
+            "assets/actor-animation-library/4baf3e6e4f9331c4832feb1a811bdfea9baa3ca72e2b5c7341a18ec7b2cb3496.png",
+            "assets/actor-animation-library/21d7920c0a18ef5a402da6e1b3adda6558cb10d1c83b019244ddf49134383a6a.png",
+            "assets/actor-animation-library/9d623596e229fb5814096b47e8bbb0cb29cc47af2b24c379c617f225e31c0fc6.png",
+            "assets/actor-animation-library/e788579e9c5f01e450b885125586cc23858726753308e4f3d561a2d5e1b93207.png",
+            "assets/actor-animation-library/7f7522411a86bc71a57e9647e92c512e85b3dfb43ec1bc606df0dd11ea99d399.png",
+            "assets/actor-animation-library/e47912ee5ee4b6ecb7ac55a179451221fb3cb2fa68a50a65b5fb8fd34ffa7135.png",
+            "assets/actor-animation-library/552c1a133df20d407708ea06f0a941c1842ecf9367ed8622c0f429446a010542.png",
+            "assets/actor-animation-library/e30fb0d6153b2a5abcabfcc171c281569ce7fcac90f2f6ea8fc4fa99c0c156cd.png"
+          ],
+          "walkRight": [
+            "assets/actor-animation-library/026a19f9b79915a253c42453f0b7990fa747912634759e5fd1e4930c820a25ff.png",
+            "assets/actor-animation-library/3844e965c8a5e6478246856d46f06a6fbf5570e8436d41d23be913956104d78e.png",
+            "assets/actor-animation-library/391b60190000615f13e7794b4049a59e5764e63fcb746471c41932ac356fa87c.png",
+            "assets/actor-animation-library/d9a8b1bfdf95be619513965a4f08e6f5b0b02811a6b573a182d90ed811bfedca.png",
+            "assets/actor-animation-library/b5e33c025168d9ef7a469ca46a9afc02ea8bc23cb188d09e217e4ffeb1a81bb0.png",
+            "assets/actor-animation-library/0443c90803cb969f0f172c59009a5682c7d817df6a182a1ff70036da6149e5ea.png",
+            "assets/actor-animation-library/b4dcf9b7b9a12fc123830c53e3d9f89630e21a2e8c6697f8535ec0829e7ad752.png",
+            "assets/actor-animation-library/312e5b7df0c58a05ebe231e7a8f16f11fec213459ba608ea65d77666be80f1c0.png",
+            "assets/actor-animation-library/b64f9ba619bcf6427677acff19c8d889684d877fc0ab535d283c13542dd57124.png",
+            "assets/actor-animation-library/66b5abd0e08bcbe0243767c0dcdf12257e51101919aaee3e2cfc6303ed62a066.png",
+            "assets/actor-animation-library/59dd29b19c331cd16bd470f776a0018a09ae84ebf47ef247cf32209bafce3616.png",
+            "assets/actor-animation-library/0ca3199f13d08de9b4a7ee12b4a0fd3465748b68ca09f2cc9a62ca925e79960e.png",
+            "assets/actor-animation-library/85aa1d0fbe268c4199c50962aaccd62f7e0125014d16c28e419596bda22e3acd.png",
+            "assets/actor-animation-library/613f8b63625d808c9a3ee7e4524ae83c548802730909d770a74d3be1219f3e2e.png",
+            "assets/actor-animation-library/db477d7a144b318158dbef0e7bd9b16483244eab48ed67b5b1f89be55c84e0a1.png",
+            "assets/actor-animation-library/3488243f2d75bad918a085875eff5d77a98accc63284dd105415284fbe229fa6.png"
+          ]
+        },
+        "breathMs": 4800,
+        "walkFrameMs": 90
+      },
+      "hasProps": false
+    },
+    {
+      "id": "2-C",
+      "actor": 2,
+      "name": "严复 C · 伏案写字（含书桌）",
+      "idle": "assets/actor-animation-library/77c3987483b566545f6eae25a33a0b86e80a5148c39598f6f2a71de0ed51e232.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.05518018,
+        0.05236486,
+        0.83164414,
+        0.95903716
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": true
+    },
+    {
+      "id": "3-A",
+      "actor": 3,
+      "name": "李叔同 A · 中山装站姿",
+      "idle": "assets/actor-animation-library/ab8f3e0ce3ebaa34aef4399c2bb44adbff4f61e2cf31e5ebfe28377b2459240e.png",
+      "width": 1400,
+      "height": 2000,
+      "bounds": [
+        0.31714286,
+        0.0805,
+        0.68785714,
+        0.9505
+      ],
+      "mobility": "standing",
+      "animation": {
+        "version": 1,
+        "name": "李叔同 A · 中山装站姿",
+        "width": 1400,
+        "height": 2000,
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "bounds": [
+          0.31714286,
+          0.0805,
+          0.68785714,
+          0.9505
+        ],
+        "base": "assets/actor-animation-library/ab8f3e0ce3ebaa34aef4399c2bb44adbff4f61e2cf31e5ebfe28377b2459240e.png",
+        "clips": {
+          "idle": [
+            "assets/actor-animation-library/ab8f3e0ce3ebaa34aef4399c2bb44adbff4f61e2cf31e5ebfe28377b2459240e.png"
+          ],
+          "blink": [
+            "assets/actor-animation-library/b8a6d5c0fc71b0fbd1003e337bb14a7fe5c87caf6ecb1b2ef84e10fbb2554638.png"
+          ],
+          "talk": [
+            "assets/actor-animation-library/aa9479363e6e3e76fff88ae13b7c4042c171851358555bed5fe9a22b32fafcf7.png"
+          ],
+          "talkBlink": [
+            "assets/actor-animation-library/e2cdc55cd797d3f6e069c51241b95ee30958800986240455d31675c2cdcba0be.png"
+          ],
+          "breath": [
+            "assets/actor-animation-library/ab8f3e0ce3ebaa34aef4399c2bb44adbff4f61e2cf31e5ebfe28377b2459240e.png",
+            "assets/actor-animation-library/d9d347ae4b789ed5bca4523196ffd363123a855030b8b252a210a3024ffd6c11.png",
+            "assets/actor-animation-library/b51aa5a02dfd346e2b5301e4664a0d69a91b38817262c943cece909c7b7b9430.png",
+            "assets/actor-animation-library/d15c5f7b2aabf9b142ae568c50d9f8b7c27cd78238e89521c75d34364658a190.png",
+            "assets/actor-animation-library/b24b281467490f2a816e2241db64fe2e9185947bc59372cfb30b9784d4f496e5.png",
+            "assets/actor-animation-library/63138a0216f27ca642135db0823fce4312c1c2ff9e74a94d08a6f134438beb0f.png",
+            "assets/actor-animation-library/eefbe2b6b0e77c684df0d59e29d38aa3ab58214c4cdf9a5b066089786cf6bd09.png",
+            "assets/actor-animation-library/63138a0216f27ca642135db0823fce4312c1c2ff9e74a94d08a6f134438beb0f.png",
+            "assets/actor-animation-library/b24b281467490f2a816e2241db64fe2e9185947bc59372cfb30b9784d4f496e5.png",
+            "assets/actor-animation-library/d15c5f7b2aabf9b142ae568c50d9f8b7c27cd78238e89521c75d34364658a190.png",
+            "assets/actor-animation-library/b51aa5a02dfd346e2b5301e4664a0d69a91b38817262c943cece909c7b7b9430.png",
+            "assets/actor-animation-library/d9d347ae4b789ed5bca4523196ffd363123a855030b8b252a210a3024ffd6c11.png"
+          ],
+          "walkLeft": [
+            "assets/actor-animation-library/fb0a6ea733cd86cda2b37c8cbe5856cf25ed88249d448736d32618e714f54594.png",
+            "assets/actor-animation-library/c4ed42f5d8390ef986802e72d1e4b9933e27e304c9796048c60f64e5ba47e3bf.png",
+            "assets/actor-animation-library/a0f787d9ab13c59221a819d2468da0eb1c98ada9e0139c41be1175c954799bab.png",
+            "assets/actor-animation-library/4c4b9f6cc306a61bd2a2d8de2be85d04d3787e4f82b0ab1cf67ff29bf50d4629.png",
+            "assets/actor-animation-library/ceb1683190419bb7d3a24f0cc9ff468a17bdcfd626e683608780c695520a3302.png",
+            "assets/actor-animation-library/da9cad79c3140774dc0c7dc432c415508d895d3ffcd3730488f492b17402353a.png",
+            "assets/actor-animation-library/66905091aa43a678e4e0c4efbb064890f2a838034b09a9209ac262d5e027b0f0.png",
+            "assets/actor-animation-library/d5458206ec4d6ae4e8fcb53ca6f20dc5254616a39b3e549eb0ee13124ffada98.png",
+            "assets/actor-animation-library/78dc91f62310f36183d9b19b90648de6ccb3599d82988a71b52743cba6690418.png",
+            "assets/actor-animation-library/9dbccccb068cbd7e78c984649395cf2721e6fa287ea7705051bbe80057fedc8d.png",
+            "assets/actor-animation-library/884b06288ec7105fc706835adb8266d09bd45fda0ab033b31bfd7f459e1c1c07.png",
+            "assets/actor-animation-library/881e248d49b8e744a5832feb3702c80cc03e88a0304056eab6049c090bb6f4e1.png",
+            "assets/actor-animation-library/0000ad546aa5b0a7a0c1292d496bcfe76e74dcc7886fd0637e52a990fbc130dd.png",
+            "assets/actor-animation-library/2b9222a9974b8b49497a2c5b5fd1664026c2e2805db4e31932598364839f91c4.png",
+            "assets/actor-animation-library/653f6e539df4fe845011c0febff6cbcc7e50b3490c0ba7fc2d3f2503f5600721.png",
+            "assets/actor-animation-library/7135c516fba1fac3feceaf3f16de5e97d5ed8be791dd516d57550305a7a38e68.png"
+          ],
+          "walkRight": [
+            "assets/actor-animation-library/861c2ecb0867c9f31aa823b5d3f3ee13bf21c7766fa963222e0913008f6eb2b3.png",
+            "assets/actor-animation-library/5589b08d8e764a22f7c96020a7b228a8ab7a4e1f686c1363d47c602f0bc2e036.png",
+            "assets/actor-animation-library/bcbfdcb9d40c0a751f16db3789ea084a4cc9f75727b240c84a3858448fea16bc.png",
+            "assets/actor-animation-library/ec38f28cbd95907a8689713af0a5cb63a48eaea609d6b02daa7e61c8a24cc7fc.png",
+            "assets/actor-animation-library/33a668a478b7f9139199e042a089f4b91bb77b55d7a421541b04b6acf7216b23.png",
+            "assets/actor-animation-library/29f55568e6adcd8a31bdc3712c70922ef4be2a2cb11b793c2c8a734a765baca1.png",
+            "assets/actor-animation-library/42c83c320a82713660df2fcdecde68f55350a3961140f0e2e138cd6da8061af7.png",
+            "assets/actor-animation-library/5379dbf170f712fdbfc16b9366f1c8b07bd3612f3a71e8e3c53e0d86a689855d.png",
+            "assets/actor-animation-library/aeb5367c7af01058073c06e6274758a99025e7954bc74e15ccaa6f0259498c80.png",
+            "assets/actor-animation-library/6677a50a8d47f237571740f3af4716d7582eb07222f05429c41e65f41f137979.png",
+            "assets/actor-animation-library/4c209a17e659c986e7eb10266696a14bffb5a5f6fc12297b9c7661c9906602a3.png",
+            "assets/actor-animation-library/772aecf02033e3fafcb2b440a434f252138dcb3a14514b62a169f4b0d9415a77.png",
+            "assets/actor-animation-library/5d4d6335a3cbb41a05693c7d1f0151369589c71d4d635a98f7abb6085db0527d.png",
+            "assets/actor-animation-library/0dba6dc9fb128411abe94941a4b55a66bcbe7a634fbdd2a5a72b12ed77bca290.png",
+            "assets/actor-animation-library/7c02367a85ebe4751eafa0e9965fee8fa4564021b126fbf82b34af59bc4db930.png",
+            "assets/actor-animation-library/91dfbaa5c7279880493f62e6cbe3127a787483891f9a744a006e96d34bc41e9a.png"
+          ]
+        },
+        "breathMs": 4800,
+        "walkFrameMs": 90
+      },
+      "hasProps": false
+    },
+    {
+      "id": "4-A",
+      "actor": 4,
+      "name": "蔡元培 A · 扶杖站姿",
+      "idle": "assets/actor-animation-library/24c1125caf08683b4256a8c0368b8fd78281d73148b26f86315788982d3812b2.png",
+      "width": 1400,
+      "height": 2000,
+      "bounds": [
+        0.30142857,
+        0.08,
+        0.72214286,
+        0.9505
+      ],
+      "mobility": "standing",
+      "animation": {
+        "version": 1,
+        "name": "蔡元培 A · 扶杖站姿",
+        "width": 1400,
+        "height": 2000,
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "bounds": [
+          0.30142857,
+          0.08,
+          0.72214286,
+          0.9505
+        ],
+        "base": "assets/actor-animation-library/24c1125caf08683b4256a8c0368b8fd78281d73148b26f86315788982d3812b2.png",
+        "clips": {
+          "idle": [
+            "assets/actor-animation-library/24c1125caf08683b4256a8c0368b8fd78281d73148b26f86315788982d3812b2.png"
+          ],
+          "blink": [
+            "assets/actor-animation-library/513537a002960c95a2761ac66b8c58ea8f9fae49758b8a16d117a865e77455e8.png"
+          ],
+          "talk": [
+            "assets/actor-animation-library/7236801d598066cc4cbd8b0ee3e5d67aa1a45d9ca8177bf28f2ab16d6ca81458.png"
+          ],
+          "talkBlink": [
+            "assets/actor-animation-library/4e6c2f4822b35cccdd0283feb447797b3fa720aab0fb427001c22a6ca12cb6d2.png"
+          ],
+          "breath": [
+            "assets/actor-animation-library/24c1125caf08683b4256a8c0368b8fd78281d73148b26f86315788982d3812b2.png",
+            "assets/actor-animation-library/ac65b2f14704810ff04d3898ebf287ffd8c87734e9e243b649e18acf3262ce4e.png",
+            "assets/actor-animation-library/5f8b303e9bf98121b68f71049d200d24314399f57fbeef6d43184b625669086b.png",
+            "assets/actor-animation-library/7d8aa7fcae76a62342d32a8517e5553d708b003dedcb024703ab3cd121ae22ee.png",
+            "assets/actor-animation-library/acec9885a4562a874df143c3ca322265466d15c34ec6c1b87d7a17cdd3aa3791.png",
+            "assets/actor-animation-library/2243a4db31fd18b56265b6c5cf42d4bfe6f74404f658a61dd06da23c9f79ac4c.png",
+            "assets/actor-animation-library/481594b8de7330219cf1fd82ef2bfacdc4959580a01d83ad682aa921fdc0cbb8.png",
+            "assets/actor-animation-library/2243a4db31fd18b56265b6c5cf42d4bfe6f74404f658a61dd06da23c9f79ac4c.png",
+            "assets/actor-animation-library/acec9885a4562a874df143c3ca322265466d15c34ec6c1b87d7a17cdd3aa3791.png",
+            "assets/actor-animation-library/7d8aa7fcae76a62342d32a8517e5553d708b003dedcb024703ab3cd121ae22ee.png",
+            "assets/actor-animation-library/5f8b303e9bf98121b68f71049d200d24314399f57fbeef6d43184b625669086b.png",
+            "assets/actor-animation-library/ac65b2f14704810ff04d3898ebf287ffd8c87734e9e243b649e18acf3262ce4e.png"
+          ],
+          "walkLeft": [
+            "assets/actor-animation-library/5227cee1f5bedb7304eb02ad6013ef8bfd1a8c993dd570f5ef048ee5081ab8bd.png",
+            "assets/actor-animation-library/e1aa48700a4e21b4dd2ece9d8cc7493d2e2b500884be5fd9643aeb5f3d412b37.png",
+            "assets/actor-animation-library/b6ed1118d698f9253a039dba7fde13d278298f9a00c3e279f00a7952eaac75ba.png",
+            "assets/actor-animation-library/c453aa9be63e2b7c8ff58afb5d57ddb9cd72d2b0d6aaec9862174ecfd0431bf1.png",
+            "assets/actor-animation-library/1668cb7de684e74c6dd663b1887b38790dbd6da72c30a9288da656a948c6597b.png",
+            "assets/actor-animation-library/b7d0273a4d93f734260fd6a26611cd6d4839b99a231f77dbc6e989ffd527f884.png",
+            "assets/actor-animation-library/db5956dd2274f129f3ac59b29a907d56e40819457b8545ce0d1c30263bc8f1c0.png",
+            "assets/actor-animation-library/0603d16949f07fb3eafb0a91abedc16e566a80e24993f9affd5f32f145d2fd3c.png",
+            "assets/actor-animation-library/06dce1fcb4870c7a36b6c8bfc7026d1ce8fb3f7ecf2beb3c896b4252bead0b2e.png",
+            "assets/actor-animation-library/1fdccf7313662a7ac87b5a463a6fcb0d02686928cebf67d665b860b42211123e.png",
+            "assets/actor-animation-library/a2cf5eed8137a6c1082e5022e3574b02fd41c29f611d35b860e6c9dc9d538a74.png",
+            "assets/actor-animation-library/4cb7b502c98f51401be51443f3b329fbb880b57b2d64c9a6e18fd93bf7cc4fad.png",
+            "assets/actor-animation-library/f674ac9d56daf844be65ed1cecd6637b5d60f403bb1995c66c6e2aff29c26813.png",
+            "assets/actor-animation-library/0a717756fd091e0243d9a4a6df8647bd4e230f02a10528cd72ecced373d5a5e4.png",
+            "assets/actor-animation-library/1269c39ab15189dbf4477d29c845ff70c3c605aece872aaab71fbd55bd64d48c.png",
+            "assets/actor-animation-library/08dbab11dcedafbbd5234a144626cedeb72b6021ab4afcf468df8d895886b31f.png"
+          ],
+          "walkRight": [
+            "assets/actor-animation-library/86c36b27b0504b820ea8fd458c0709df5551c2e84206f03701b0ea254a7ec1a1.png",
+            "assets/actor-animation-library/d7ea429b0c901ab6ffa326b01f2df48cfcb2775bf9b7a99979e38dfd52db7a31.png",
+            "assets/actor-animation-library/3bbd65042843ec3f0d638fa252e6327255d779fef276c2495b1ecb5157ec1541.png",
+            "assets/actor-animation-library/aab06f8639c7f3472a7abd670a7d8a1529dd173449d5a1ce80d5abb211408f6d.png",
+            "assets/actor-animation-library/95ab6caaae215148ce5f0089b9ba8257d62d3b44f4abf63232dcde2b36079538.png",
+            "assets/actor-animation-library/876b8c46597764bd965bb53ab277006ea82ee6c0e3223cbacc9475993711a9d4.png",
+            "assets/actor-animation-library/7160e1a5e1be6091d79611edd2e6ac617c956c4286f53aec9a4f5d8a528885a6.png",
+            "assets/actor-animation-library/00737ba81da036602e133ddc9cd38362b09d26811b836a1513d2f0c5fc560876.png",
+            "assets/actor-animation-library/c6e49f6c4382b09b6f3fb1a5c21f2b03edfd8cd5f4d777798271cf34e8ad4d1e.png",
+            "assets/actor-animation-library/2d5aff52a6445565d7d2ebb4a9c5f9725fbddb6f631a2c13affd1cb5caa01f22.png",
+            "assets/actor-animation-library/fadeb81e5eaa2721159531b83349228a0c8922c9f9ea4e37eabf269bd82c687c.png",
+            "assets/actor-animation-library/a975c4471eb7b50b51bea6697497d8f5bbfb4d88b09ddbf372085141a067db49.png",
+            "assets/actor-animation-library/fe128289febf6d88664729b4a008ffcd10a342512059e64bab891769e9365648.png",
+            "assets/actor-animation-library/605eb4f7ef29cb4617dba0a33d2798703cb589456264d49c389f14a45ec314f7.png",
+            "assets/actor-animation-library/0719892a9bff0adfcb19d9236d598a8c270c2cab46c1c87b6a5a2cb1cb4aa501.png",
+            "assets/actor-animation-library/fcde413a18f9dd3f6c540a42ee99015628091ee6bba687a90232fd049f4a487e.png"
+          ]
+        },
+        "breathMs": 4800,
+        "walkFrameMs": 90
+      },
+      "hasProps": false
+    },
+    {
+      "id": "5-A",
+      "actor": 5,
+      "name": "柏拉图 A · 侧身抚须站姿",
+      "idle": "assets/actor-animation-library/2588d94b68a50f17e09de05ae11ec92ea87a48bfc401ff6aaaf3c9bbf3ca411a.png",
+      "width": 1344,
+      "height": 3136,
+      "bounds": [
+        0.20014881,
+        0.09821429,
+        0.77157738,
+        0.89700255
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": false
+    },
+    {
+      "id": "5-B",
+      "actor": 5,
+      "name": "柏拉图 B · 长椅坐姿",
+      "idle": "assets/actor-animation-library/a6d8dc1743eb32a0706258ddb8c8f4c2a22653bb76ac33e948743dcc8a9c62ca.png",
+      "width": 540,
+      "height": 720,
+      "bounds": [
+        0.08518519,
+        0.05416667,
+        0.91111111,
+        0.9375
+      ],
+      "mobility": "seated",
+      "animation": null,
+      "hasProps": true
+    },
+    {
+      "id": "5-C",
+      "actor": 5,
+      "name": "柏拉图 C · 持书站姿",
+      "idle": "assets/actor-animation-library/69dece804c30193ddf7dd86484e9659d2021b7e9a3498a6cbf3e92b2d261b79e.png",
+      "width": 1400,
+      "height": 2000,
+      "bounds": [
+        0.26071429,
+        0.0805,
+        0.75,
+        0.9505
+      ],
+      "mobility": "standing",
+      "animation": {
+        "version": 1,
+        "name": "柏拉图 C · 持书站姿",
+        "width": 1400,
+        "height": 2000,
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "bounds": [
+          0.26071429,
+          0.0805,
+          0.75,
+          0.9505
+        ],
+        "base": "assets/actor-animation-library/69dece804c30193ddf7dd86484e9659d2021b7e9a3498a6cbf3e92b2d261b79e.png",
+        "clips": {
+          "idle": [
+            "assets/actor-animation-library/69dece804c30193ddf7dd86484e9659d2021b7e9a3498a6cbf3e92b2d261b79e.png"
+          ],
+          "blink": [
+            "assets/actor-animation-library/3c8ab2537d60262f58328d522ba7b6d371b8391ed8fd8f8b66bf6848db68b79a.png"
+          ],
+          "talk": [
+            "assets/actor-animation-library/89fbd0881c2bca8e2cad854e7f5c4204cf32175e82684a3a5f87dc9135450b2b.png"
+          ],
+          "talkBlink": [
+            "assets/actor-animation-library/265f2854e63f6c2ba34ec69e965261514bbe89b12da0d5ee55ee80e75b6a1833.png"
+          ],
+          "breath": [
+            "assets/actor-animation-library/69dece804c30193ddf7dd86484e9659d2021b7e9a3498a6cbf3e92b2d261b79e.png",
+            "assets/actor-animation-library/75ed03f509dbc1a9dcf65a6ef1d7bff6b92e8a1e670107ea0beb76a52be7e90a.png",
+            "assets/actor-animation-library/9cdadce1d5fb45bf1a47c49507a898441b9e1a9c35aa1de2beb89e290768f873.png",
+            "assets/actor-animation-library/e517bb7f39cc960874dade5aa9112dc9cc9592e27707ac8993b9540d65abfe19.png",
+            "assets/actor-animation-library/9a9a4123732595df33b269513f1ca462f1aa9c91557f15d61e89ca7d7f3bf092.png",
+            "assets/actor-animation-library/050b2894e83690bd23f781cc72e274577ebcdc25d800391d3ea4ec5a45e275cf.png",
+            "assets/actor-animation-library/39e94741294a78a0ff49c337adafdf6af67a5112f5344182e422928854c3f963.png",
+            "assets/actor-animation-library/050b2894e83690bd23f781cc72e274577ebcdc25d800391d3ea4ec5a45e275cf.png",
+            "assets/actor-animation-library/9a9a4123732595df33b269513f1ca462f1aa9c91557f15d61e89ca7d7f3bf092.png",
+            "assets/actor-animation-library/e517bb7f39cc960874dade5aa9112dc9cc9592e27707ac8993b9540d65abfe19.png",
+            "assets/actor-animation-library/9cdadce1d5fb45bf1a47c49507a898441b9e1a9c35aa1de2beb89e290768f873.png",
+            "assets/actor-animation-library/75ed03f509dbc1a9dcf65a6ef1d7bff6b92e8a1e670107ea0beb76a52be7e90a.png"
+          ],
+          "walkLeft": [
+            "assets/actor-animation-library/df4e389cb39a1f0be0c8c80e2740526cea0ff40c9a572859037526cb01d5b1d3.png",
+            "assets/actor-animation-library/5cfe6e381cf4db898d78107a1be7d8f30940b62613acf7e4e402d2944b91eeb9.png",
+            "assets/actor-animation-library/57d5bdbea3dc7a8f62bc001475d9c3010664d9b155ed73bddc763cd6801c10f2.png",
+            "assets/actor-animation-library/c57229aa7cd5739b479be01b66232688ea55d79be591c8b2763b31fbd1375a1b.png",
+            "assets/actor-animation-library/23d8ea06d818d74948beeba483640205919f6d23f5b4b0c2677035392cc7f9ad.png",
+            "assets/actor-animation-library/4e8da46d7f9ec91494ee1890e0233298b42ea527b395d409f6b3fbc3570157f4.png",
+            "assets/actor-animation-library/686f65a6a5c5a4e8692fe52182adb77712c218d68012b7ea100fae2d838a2eb7.png",
+            "assets/actor-animation-library/a73f3a62f605ceda698fbc82d11cb4aefc3ebd2631f5c3717f60c8faaae5fb86.png",
+            "assets/actor-animation-library/b9b70430910fc8fa84f9bda057e6cd134f2a9a57a5a419cad0b3b539b54a0456.png",
+            "assets/actor-animation-library/918c84bfc4d09c107ec7c4745246ced00d86a4128851eabdda6752ee1f267bad.png",
+            "assets/actor-animation-library/043a8fb18878da28372e5b78eeacb4fc38ef78d4f59179ee60d6f5c2fdaa6165.png",
+            "assets/actor-animation-library/05f9aaad6c96983db49c85cd051b9e8894fc369f772023465f60abd2eb08e48e.png",
+            "assets/actor-animation-library/e3296024e4f9c61c795edd70b873f5f61aa5172ccab4fc14de9036b6421c9126.png",
+            "assets/actor-animation-library/d6fcdb9e890ff5550c77d4cc6ab7567fe3b9168061f3930bfe19e0e0aaedadc3.png",
+            "assets/actor-animation-library/92ae79f47417a57dfb5a3ecc53de8bda0cdcc1485109724be9a871303bfa2e59.png",
+            "assets/actor-animation-library/df5c2a2e45f9ec4778b772dcb59d39cdcc28a332c94f6650ac469ea8936625dd.png"
+          ],
+          "walkRight": [
+            "assets/actor-animation-library/f8b49009caedbe9dc499a7247d4cf6b28224c7cb2ba43cd06b73f10c2e1da303.png",
+            "assets/actor-animation-library/48bb2eb1e7e88799c23413c2b043887e6db3aa578be9ebbd732c2c35793ce938.png",
+            "assets/actor-animation-library/659df14eadb9cc679618649bb6e3949427de6b51e55c608edb2cba72be6dc9e7.png",
+            "assets/actor-animation-library/b8d4d5ccac2ed95a02daf71cefd2d400a6a369250ad238e65adfc4dd12687f0b.png",
+            "assets/actor-animation-library/fc0ce88ac5f5fc636e3e4e9f524f02503ba19d24097243c4a095824c1eb82d8a.png",
+            "assets/actor-animation-library/c145187ea3a029fda9c05c84558ec6e89a819ec5dde7d091ec81f7bd8abcb23b.png",
+            "assets/actor-animation-library/d9a83919add930c965518751ec82f3122c9957192736184addb7459b4117a0f6.png",
+            "assets/actor-animation-library/dbab49d47d03cf9fdde46e298297edfb33b8f59cb8f185617dcb37b1f35eaa38.png",
+            "assets/actor-animation-library/d03b6a5c3121d221f7995e84880eff1a2a07c78f51daedb0363bd2198107a9cc.png",
+            "assets/actor-animation-library/661fa4b3011b62751beb60494ceb0c9b0782fb236e56c7486ad900a1f4e21887.png",
+            "assets/actor-animation-library/d0c93e1611c17bb7873e93841c5d569ce3ad10dd010b74aa6a42ec348bd8c106.png",
+            "assets/actor-animation-library/81eb835fdcbb62c85eb058f7175341197a75d9bd2419d1e3be2decb7438c104c.png",
+            "assets/actor-animation-library/3eea13d9119b4649c5c8289ac863ae44e59494be0e0ad7d60d336f5741d076c1.png",
+            "assets/actor-animation-library/3399399b074195be3730d6ed636756fe42c2a476f48f3f9c38b16aca5a742226.png",
+            "assets/actor-animation-library/f3c85445f0df26f5d2986b7dec695cf0c8dc2e4f968124c95b3871ff42ba257d.png",
+            "assets/actor-animation-library/9327eb28dac32f8fad856cf08346035a14f5a4d3d1815712ca9c3e9173da0c30.png"
+          ]
+        },
+        "breathMs": 4800,
+        "walkFrameMs": 90
+      },
+      "hasProps": false
+    },
+    {
+      "id": "6-A",
+      "actor": 6,
+      "name": "达芬奇 A · 侧身倚台坐姿",
+      "idle": "assets/actor-animation-library/4be2d7f607fe58276dcf5775cc80e0c834da60f9a1b331d17b7f7673fb2bbadc.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.00957207,
+        0.09839527,
+        0.92511261,
+        0.88682432
+      ],
+      "mobility": "seated",
+      "animation": null,
+      "hasProps": true
+    },
+    {
+      "id": "6-B",
+      "actor": 6,
+      "name": "达芬奇 B · 木椅坐姿",
+      "idle": "assets/actor-animation-library/8f80c9f48f49430d2eb2460869f0cf98699cdda3c5966e31f28e9b6338cb4c76.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.17961712,
+        0.07263514,
+        0.8338964,
+        0.94510135
+      ],
+      "mobility": "seated",
+      "animation": null,
+      "hasProps": true
+    },
+    {
+      "id": "6-C",
+      "actor": 6,
+      "name": "达芬奇 C · 手举几何体站姿",
+      "idle": "assets/actor-animation-library/bee79487c22a547e420903bd93f5341703766488ac2e56f710856e8f314a616e.png",
+      "width": 1400,
+      "height": 2000,
+      "bounds": [
+        0.14285714,
+        0.08,
+        0.74785714,
+        0.95
+      ],
+      "mobility": "standing",
+      "animation": {
+        "version": 1,
+        "name": "达芬奇 C · 手举几何体站姿",
+        "width": 1400,
+        "height": 2000,
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "bounds": [
+          0.14285714,
+          0.08,
+          0.74785714,
+          0.95
+        ],
+        "base": "assets/actor-animation-library/bee79487c22a547e420903bd93f5341703766488ac2e56f710856e8f314a616e.png",
+        "clips": {
+          "idle": [
+            "assets/actor-animation-library/bee79487c22a547e420903bd93f5341703766488ac2e56f710856e8f314a616e.png"
+          ],
+          "blink": [
+            "assets/actor-animation-library/224c8312b80b06be6a929a528d3bf8f8d0107afc330e5b9bf85dcec1845fd9f9.png"
+          ],
+          "talk": [
+            "assets/actor-animation-library/297a967d0cb806e5497beaa4ebf52657c25c1787ad0fcbbd278b4dfcae71e013.png"
+          ],
+          "talkBlink": [
+            "assets/actor-animation-library/9621b40c8a089777de108c30de10e67b072768b147fbbbb79195790d8107b3db.png"
+          ],
+          "breath": [
+            "assets/actor-animation-library/bee79487c22a547e420903bd93f5341703766488ac2e56f710856e8f314a616e.png",
+            "assets/actor-animation-library/30c80cb4dbdeeaeb8b7b223b01a4a8076e875b4a92ff56ca2f2d4097b00b843b.png",
+            "assets/actor-animation-library/4bef25a8e30ccc24b098a5d22d6aa76173a560138a81f3a58199b94de91ff7bf.png",
+            "assets/actor-animation-library/dd549f484e23464037bf80387354234fea46287f73bd5f4fae42c3ecf53aaf22.png",
+            "assets/actor-animation-library/8f0ab82d576402c04aef0e67f3daad1510ca4b9b91692ba3e28c2b6ccbd4398d.png",
+            "assets/actor-animation-library/89c3d0cb8079de87e5241d58f06e191da896c5f951e0645490295ac78f02aac1.png",
+            "assets/actor-animation-library/fe71ae23186c70a79e40ef1c41305551848240a3fa359fa442990654f23b82a4.png",
+            "assets/actor-animation-library/89c3d0cb8079de87e5241d58f06e191da896c5f951e0645490295ac78f02aac1.png",
+            "assets/actor-animation-library/8f0ab82d576402c04aef0e67f3daad1510ca4b9b91692ba3e28c2b6ccbd4398d.png",
+            "assets/actor-animation-library/dd549f484e23464037bf80387354234fea46287f73bd5f4fae42c3ecf53aaf22.png",
+            "assets/actor-animation-library/4bef25a8e30ccc24b098a5d22d6aa76173a560138a81f3a58199b94de91ff7bf.png",
+            "assets/actor-animation-library/30c80cb4dbdeeaeb8b7b223b01a4a8076e875b4a92ff56ca2f2d4097b00b843b.png"
+          ],
+          "walkLeft": [
+            "assets/actor-animation-library/fda28f6109f560a391b7c9e98e08159649cfff5d1e7433e389235bf1fec877dd.png",
+            "assets/actor-animation-library/08667422e9c03ea4c64e188e1d3fc282f736bdea1e78e6e465f391654ebe7bb6.png",
+            "assets/actor-animation-library/d6c7913a36a10e66f07a5dd09b5161bb1d5571ec3842ea42969c55c914028ee9.png",
+            "assets/actor-animation-library/0d51f6e217ea5d2ecfc15cf1abc8c2c66e9baabd23ff8d9c68d6b3833dbafb74.png",
+            "assets/actor-animation-library/3e23f5324bde40adfdc9ebdb663576f0fe3b5502f1971906c48f6db8e7c96763.png",
+            "assets/actor-animation-library/f157e01276b53571dfcd464b6ee77483701ca2f721b74bb5be274744b0fc80dd.png",
+            "assets/actor-animation-library/3086cd91c8252d43706228766d2db1f55d3ea429b69ba2d30cb62fdb2741dc4c.png",
+            "assets/actor-animation-library/dfc3b1e02af3436b27682fe2d786407a69f8d5d7beda314e1db2755ad28e7fbc.png",
+            "assets/actor-animation-library/0adb8d2183e78471db3c6147c1b18372e72191e4688961ec593bf66702b6050d.png",
+            "assets/actor-animation-library/96e205f711aa26cc4d3ec9a4e93fab46ae2361105e082827bf7ccea68e8d593b.png",
+            "assets/actor-animation-library/156a794154d07583403d30c583450aa8afd8f849efa457d5b61097dfc1216de3.png",
+            "assets/actor-animation-library/798d91c8ee9eecb97edd6fddff101bfd3ceb922591254401a6f55808df065e92.png",
+            "assets/actor-animation-library/198cffb562637d50ca3de322d1a149117523b26b1af3ddd8c7b305d67ff3dddb.png",
+            "assets/actor-animation-library/ad3a7f968c3c92d7233d788fcee491b494487518ade6c813aa6794987297b8c1.png",
+            "assets/actor-animation-library/9c0a19489e5dbd938514f3d9cfbb240736a8e25bcd50f0db7420b4d55f05eeee.png",
+            "assets/actor-animation-library/88cea136c9bfc27c686905150b54e296093f60ce1fedd4c372da68ed8c58bd4c.png"
+          ],
+          "walkRight": [
+            "assets/actor-animation-library/1ea6b00a1eecbac6120e9c8eebd545d92c476ae40fe4cb4d5f07e1d3829875fe.png",
+            "assets/actor-animation-library/9d4f227bf65ab6d105a27941ab64737dc7860537916e2ea88d4ae006387ec594.png",
+            "assets/actor-animation-library/30fae92054930a35c8886ec3426987c98380271f1179adb0a129c1ea89f5e706.png",
+            "assets/actor-animation-library/05fc92cff1574e4139f8b6369c02f6bd9d83803552970ff72110defeb25ca754.png",
+            "assets/actor-animation-library/100a0cb8baff29effac8b8b43bd3cf5b2425cb4a23cb57714638ddccac7cd4d8.png",
+            "assets/actor-animation-library/122625814dd9e9b3ddad93ab54f1242ed53c43998f70c312e2037bda76b25da8.png",
+            "assets/actor-animation-library/efc2c207a13ed511101c33b381b7df44d44af7057ac8d1de28e227d83538ecaf.png",
+            "assets/actor-animation-library/a60d72b14d6fe8000ea2db315d1c540a7971f01be785f606df4938496c97eadf.png",
+            "assets/actor-animation-library/f9279dcee017f88cd6121f9f61603a950f8d6c177881240f2d36b28a3914a104.png",
+            "assets/actor-animation-library/a46607d6779cae41bcd9eb13b574f20149de8a60ee3c39cb11c10f3fac01edfe.png",
+            "assets/actor-animation-library/e27179774b0c95676e051eeff704a7c60fc5a03da5140c795de00574162a3cbb.png",
+            "assets/actor-animation-library/cabcca91b6fe3d448153babb8bcdcebf89ac98aa1ca1ff7ac61f385da69616f9.png",
+            "assets/actor-animation-library/f7bdfae4af17dec870d321c882f09ddb8b11daaf10de84f9641484dec49e4cc4.png",
+            "assets/actor-animation-library/e1f561f2230da32486cf53db22a55653d0df384a4b315c910274be53276437a7.png",
+            "assets/actor-animation-library/cff6c61908a420a4b5c1091682d3b6efc856b2b4a5a4623f955dc9016a39103f.png",
+            "assets/actor-animation-library/115414651ccbe614a8681d2ba976f841c3395cc47b02fa8ed2ef9fa821b36465.png"
+          ]
+        },
+        "breathMs": 4800,
+        "walkFrameMs": 90
+      },
+      "hasProps": false
+    },
+    {
+      "id": "7-A",
+      "actor": 7,
+      "name": "伽利略 A · 望远镜（含支架）",
+      "idle": "assets/actor-animation-library/a8d1553fc2326fc509e7c22ad0bc44d9dd344072d71bd9bf35933953de21f04d.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.19594595,
+        0.03547297,
+        0.84290541,
+        0.95903716
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": true
+    },
+    {
+      "id": "8-A",
+      "actor": 8,
+      "name": "愚公 A · 拄杖基本站姿",
+      "idle": "assets/actor-animation-library/1d0fb33dd259ffebbeaa8a122b7aff2444c842065c6f23686707fecf760ffd8b.png",
+      "width": 1024,
+      "height": 1536,
+      "bounds": [
+        0.05859375,
+        0.014322916666666666,
+        0.927734375,
+        0.9798177083333334
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": true
+    },
+    {
+      "id": "8-B",
+      "actor": 8,
+      "name": "愚公 B · 正面持铲站姿",
+      "idle": "assets/actor-animation-library/2e4cc9e29ecb3685f9b6bf00140ae18826472a099efc2bf352a02fcbae77fb0f.png",
+      "width": 1776,
+      "height": 2368,
+      "bounds": [
+        0.16948198,
+        0.04349662,
+        0.74211712,
+        0.95396959
+      ],
+      "mobility": "standing",
+      "animation": null,
+      "hasProps": false
+    }
+  ]
+}

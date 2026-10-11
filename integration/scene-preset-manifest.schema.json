@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "大场景与完整场景人物配置清单 v1",
+  "description": "每个序号代表完整场景加人物；同组与跨组切换均整体应用目标配置。跨引用与真实前端配置仍需联调校验。",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "protocolVersion": {
+      "const": 1
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "code": {
+            "type": "string",
+            "pattern": "^[A-Z]+$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "defaultPresetId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "presets": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "code": {
+                  "type": "string",
+                  "pattern": "^[A-Z]+[1-9][0-9]*$"
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120
+                },
+                "frontendTarget": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160,
+                  "description": "前端实际注册的整套场景与人物配置引用，包含背景、场景元素、人物名单、素材、站位、姿态及动画；不得隐式继承上一套状态。"
+                }
+              },
+              "required": [
+                "id",
+                "code",
+                "label",
+                "frontendTarget"
+              ]
+            },
+            "description": "同组每一项都是可独立恢复的场景与人物完整配置，不是仅人物站位补丁。"
+          }
+        },
+        "required": [
+          "id",
+          "code",
+          "label",
+          "defaultPresetId",
+          "presets"
+        ]
+      }
+    }
+  },
+  "required": [
+    "protocolVersion",
+    "revision",
+    "scenes"
+  ]
+}

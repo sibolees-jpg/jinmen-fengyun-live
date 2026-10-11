@@ -1,0 +1,24 @@
+{
+  "name": "jinmen-fengyun-live",
+  "version": "13.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/start-knowledge.mjs",
+    "test": "npm run test:realtime && npm run test:bubbles",
+    "show:save": "node scripts/sync-show.mjs save",
+    "show:load": "node scripts/sync-show.mjs load",
+    "show:watch": "node scripts/live-sync.mjs",
+    "test:realtime": "node --test tests/auto-discussion.test.cjs tests/live-director-auto.test.cjs tests/realtime-edition.test.mjs tests/character-knowledge.test.mjs tests/deepseek.test.mjs tests/response-client.test.cjs tests/stage-channel.test.mjs tests/speech-capture.test.cjs tests/doubao-speech.test.mjs tests/discussion-memory.test.mjs tests/memory-isolation.test.mjs",
+    "test:bubbles": "node --test tests/live-bubble-faces.test.cjs tests/stage-layout.test.cjs tests/bubbles-v40.test.cjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "ws": "8.21.3"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.13"
+  },
+  "description": "津门风云：现场接话与自动讨论演示版"
+}

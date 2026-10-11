@@ -1,0 +1,133 @@
+{
+  "notice": "仅用于接口演示，所有稿句与前端引用均为示例，不得导入正式演出。 每个 frontendTarget 均表示完整场景与人物配置；A2 不仅是转身或位置增量。",
+  "manifest": {
+    "protocolVersion": 1,
+    "revision": "example-only-1",
+    "scenes": [
+      {
+        "id": "sc-map-example-a",
+        "code": "A",
+        "label": "示例第一大场景",
+        "defaultPresetId": "sc-example-a1",
+        "presets": [
+          {
+            "id": "sc-example-a1",
+            "code": "A1",
+            "label": "示例A1整套场景与人物配置",
+            "frontendTarget": "example-stage-config-a1"
+          },
+          {
+            "id": "sc-example-a2",
+            "code": "A2",
+            "label": "示例A2整套场景与人物配置",
+            "frontendTarget": "example-stage-config-a2"
+          }
+        ]
+      },
+      {
+        "id": "sc-map-example-b",
+        "code": "B",
+        "label": "示例第二大场景",
+        "defaultPresetId": "sc-example-b1",
+        "presets": [
+          {
+            "id": "sc-example-b1",
+            "code": "B1",
+            "label": "示例B1整套场景与人物配置",
+            "frontendTarget": "example-stage-config-b1"
+          }
+        ]
+      }
+    ]
+  },
+  "bindings": {
+    "protocolVersion": 1,
+    "scriptRevision": 0,
+    "manifestRevision": "example-only-1",
+    "cues": [
+      {
+        "id": "example-cue-1",
+        "sentence": {
+          "blockIndex": 0,
+          "sentenceId": "example-sentence-1"
+        },
+        "sourceText": "让我们走入第一处场景。",
+        "trigger": {
+          "at": "keyword",
+          "phrase": "走入第一处场景"
+        },
+        "actions": {
+          "scene": {
+            "sceneId": "sc-map-example-a",
+            "presetId": "sc-example-a1"
+          },
+          "reply": {
+            "groupId": "0:example-dialogue-1"
+          }
+        }
+      },
+      {
+        "id": "example-cue-2",
+        "sentence": {
+          "blockIndex": 0,
+          "sentenceId": "example-sentence-2"
+        },
+        "sourceText": "接下来，请转身望向远处。",
+        "trigger": {
+          "at": "keyword",
+          "phrase": "转身望向远处"
+        },
+        "actions": {
+          "preset": {
+            "presetId": "sc-example-a2"
+          },
+          "reply": {
+            "groupId": "0:example-dialogue-1"
+          }
+        }
+      },
+      {
+        "id": "example-cue-3",
+        "sentence": {
+          "blockIndex": 1,
+          "sentenceId": "example-sentence-3"
+        },
+        "sourceText": "现在，我们进入第二处场景。",
+        "trigger": {
+          "at": "keyword",
+          "phrase": "进入第二处场景"
+        },
+        "actions": {
+          "scene": {
+            "sceneId": "sc-map-example-b",
+            "presetId": "sc-example-b1"
+          }
+        }
+      }
+    ]
+  },
+  "event": {
+    "type": "command",
+    "action": "apply-stage-cue",
+    "protocolVersion": 1,
+    "eventId": "example-run-5-cue-2",
+    "cueId": "example-cue-2",
+    "epoch": 5,
+    "seq": 2,
+    "scriptRevision": 0,
+    "manifestRevision": "example-only-1",
+    "stageId": "example-primary-screen",
+    "sentence": {
+      "blockIndex": 0,
+      "sentenceId": "example-sentence-2"
+    },
+    "actions": {
+      "preset": {
+        "presetId": "sc-example-a2"
+      },
+      "reply": {
+        "groupId": "0:example-dialogue-1"
+      }
+    }
+  }
+}

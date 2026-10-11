@@ -1,0 +1,14 @@
+#joint-finale{position:absolute;inset:0;pointer-events:none}
+#joint-finale[hidden],#joint-finale [hidden]{display:none!important}
+.finale-active>#actors,.finale-active>#labels,.finale-active>#bubbles,.finale-active>#test-composer{visibility:hidden}
+.finale-heading{position:absolute;left:50%;transform:translateX(-50%);z-index:60;text-align:center;width:min(90%,720px);color:#302e26;text-shadow:0 1px 2px #fff6}
+.finale-heading-note{font:12px/1.4 -apple-system,'PingFang SC',sans-serif;letter-spacing:.16em}
+.finale-heading h1{font:clamp(22px,3.4vw,54px)/1.4 'Songti SC','STSong',serif;font-weight:400;letter-spacing:.13em;margin:8px 0}
+.finale-heading p{font:clamp(11px,1.15vw,18px)/1.6 'Songti SC','STSong',serif;margin:0;letter-spacing:.15em}
+.finale-person .art{animation:ink-breathe 5s ease-in-out infinite}
+#joint-finale[data-standby=true] .actor *,#joint-finale[data-standby=true] .actor{animation:none!important;transition:none!important}
+#joint-finale[data-paused=true] .actor *{animation-play-state:paused!important}
+.finale-person[data-walking=true] .art{animation:ink-step .52s ease-in-out infinite}
+.finale-person[data-phase=speaking] .art{animation:ink-speak 3.6s ease-in-out infinite}
+.finale-bubble[data-presentation=upper]{max-width:min(440px,58vw)}
+@media(max-width:800px){.finale-bubble[data-presentation=upper]{max-width:68vw}.finale-bubble[data-presentation=upper] .bubble-text{font-size:17px}}

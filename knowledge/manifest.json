@@ -1,0 +1,12 @@
+{
+  "version": "knowledge-20260927-v1",
+  "createdAt": "2026-09-27",
+  "mode": "retrieval-not-finetuning",
+  "domain": "新医科",
+  "actors": 8,
+  "sources": 24,
+  "works": 20,
+  "chunks": 1926,
+  "characters": 2203337,
+  "indexSha256": "bbe6a3f5ab8383a86bfc41d92d937bc2e60b1efc172091a55860535be9203cf3"
+}

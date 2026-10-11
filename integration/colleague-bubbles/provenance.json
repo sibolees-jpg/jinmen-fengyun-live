@@ -1,0 +1,10 @@
+{
+  "sourceRevision": "6b029d24c321df2fa91bf40a4aaf0d528f3ea440",
+  "sourceFiles": [
+    "caption-layout.js",
+    "stage-layout.js",
+    "stage.js:renderCaption/advanceCaption",
+    "stage.css:121-133"
+  ],
+  "scope": "视觉排版与逐字显示；不导入同事的语音、队列、AI、导演台。"
+}

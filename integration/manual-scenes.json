@@ -1,0 +1,16 @@
+{
+  "version": "v38",
+  "scriptUnchanged": true,
+  "manualScenes": [
+    {
+      "sequenceCode": "T2",
+      "sceneId": "sc-q925-t2",
+      "visualCopyOf": "sc-q925-t1",
+      "liveDialogue": true,
+      "entry": "manual",
+      "overlay": "scene-local",
+      "notes": "本版唯一 AI 即兴场景。复用 T1 完整视觉，独立气泡配置；其他场次仅固定剧本接话。"
+    }
+  ],
+  "improvScope": "live_scene_only"
+}

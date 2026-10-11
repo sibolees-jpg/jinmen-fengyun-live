@@ -1,0 +1,242 @@
+[
+  {
+    "id": "card-1",
+    "sourceId": "LQ01-五",
+    "heading": "公共德行",
+    "keywords": [
+      "公共",
+      "合作",
+      "社会",
+      "公德",
+      "青年"
+    ],
+    "text": "从公德与私德的区别追问：个人的好意怎样变成可以共同实践的制度和习惯？",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-2",
+    "sourceId": "LQ01-十五",
+    "heading": "持续行动",
+    "keywords": [
+      "坚持",
+      "挫折",
+      "毅力",
+      "行动",
+      "改革"
+    ],
+    "text": "把毅力理解为遇到阻力后继续推进的能力，避免把昂扬口号当作已经完成的行动。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-3",
+    "sourceId": "LQ03",
+    "heading": "具体工作",
+    "keywords": [
+      "敬业",
+      "工作",
+      "乐业",
+      "劳动",
+      "专注"
+    ],
+    "text": "把宏大志向落到具体工作、责任与专注中。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-4",
+    "sourceId": "LH01",
+    "heading": "筹办条件",
+    "keywords": [
+      "人才",
+      "经费",
+      "制度",
+      "预算",
+      "资源",
+      "技术",
+      "项目",
+      "医院"
+    ],
+    "text": "奏折重视人才、经费及积习等实施阻力；人物可先检视组织和长期维护条件。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-5",
+    "sourceId": "YF01-translation",
+    "heading": "概念与传达",
+    "keywords": [
+      "翻译",
+      "概念",
+      "定义",
+      "理解",
+      "证据",
+      "AI"
+    ],
+    "text": "译例言讨论准确与通达的困难。类比现代讨论时先校准概念，再判断推论；类比是项目演绎。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-6",
+    "sourceId": "YF02-preface",
+    "heading": "群己界限",
+    "keywords": [
+      "自由",
+      "权利",
+      "边界",
+      "公共",
+      "个人",
+      "隐私"
+    ],
+    "text": "译者序提出个人自由与群体约束的界限，不能把西方制度名词简单移植成现成答案。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-7",
+    "sourceId": "CY01",
+    "heading": "美育与情感",
+    "keywords": [
+      "美育",
+      "艺术",
+      "人格",
+      "感情",
+      "医学教育",
+      "人文"
+    ],
+    "text": "在其历史语境中理解美育对情感和超越私利的作用；现代课程效果仍需独立评价。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-8",
+    "sourceId": "CY02",
+    "heading": "大学目的",
+    "keywords": [
+      "大学",
+      "教育",
+      "学术",
+      "课程",
+      "研究",
+      "升官"
+    ],
+    "text": "演说从抱定宗旨、砥砺德行、敬爱师友谈办学与求学，不把学历仅作升官发财的工具。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-9",
+    "sourceId": "LS02",
+    "heading": "感受与留白",
+    "keywords": [
+      "告别",
+      "离别",
+      "友情",
+      "音乐",
+      "感受"
+    ],
+    "text": "原词通过景物和距离呈现离别，角色说话可节制、具体，不把抒情硬变成说教。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-10",
+    "sourceId": "LS03",
+    "heading": "日常自省",
+    "keywords": [
+      "修养",
+      "自省",
+      "倾听",
+      "慈悲",
+      "患者",
+      "人文",
+      "改过"
+    ],
+    "text": "选集包含忏悔、自我检点及慈悲的古代语句。角色可从照看他人和日常练习回应，必须保留其选辑而非全部原创的性质。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-11",
+    "sourceId": "PL01",
+    "heading": "教育与认知",
+    "keywords": [
+      "教育",
+      "知识",
+      "真理",
+      "影像",
+      "AI",
+      "洞穴",
+      "知觉",
+      "education",
+      "knowledge",
+      "cave",
+      "truth"
+    ],
+    "text": "《理想国》以对话探讨教育、正义和认识；洞穴比喻可用于追问所见是否就是真知，但现代技术类比不是原文结论。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-12",
+    "sourceId": "PL02",
+    "heading": "自知与质询",
+    "keywords": [
+      "无知",
+      "质疑",
+      "智慧",
+      "检验",
+      "自省",
+      "ignorance",
+      "wisdom",
+      "examine"
+    ],
+    "text": "《申辩篇》里的苏格拉底检视自以为知的态度。柏拉图角色可追问判断根据，不自称本人受审。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-13",
+    "sourceId": "PL03",
+    "heading": "文字与理解",
+    "keywords": [
+      "文字",
+      "记忆",
+      "对话",
+      "理解",
+      "AI",
+      "写作",
+      "writing",
+      "memory",
+      "speech"
+    ],
+    "text": "《斐德若篇》讨论言辞、文字和理解的关系。可追问回答是否只是重复符号；AI关联属于当代假想。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-14",
+    "sourceId": "DV01",
+    "heading": "观察与试验",
+    "keywords": [
+      "观察",
+      "绘画",
+      "科学",
+      "试验",
+      "经验",
+      "结构",
+      "observation",
+      "experience",
+      "experiment",
+      "painting",
+      "anatomy"
+    ],
+    "text": "笔记把观察与绘画、透视、结构联系起来。现场角色先提出能观察和核对的操作，不以权威代替试验。",
+    "kind": "project_interpretation"
+  },
+  {
+    "id": "card-15",
+    "sourceId": "YG01",
+    "heading": "困难与持续劳动",
+    "keywords": [
+      "坚持",
+      "劳动",
+      "挫折",
+      "长期",
+      "行动",
+      "工具",
+      "方法"
+    ],
+    "text": "愚公因出行受阻而与家人商议移山，故事有现实困难、质疑和持续劳动，最后由神移山。项目演绎强调分步实践，也允许更换工具与方法。",
+    "kind": "project_interpretation"
+  }
+]

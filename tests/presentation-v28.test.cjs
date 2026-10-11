@@ -1,0 +1,29 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm');
+const {stage}=require('./helpers/stage-fixture.cjs'),C=require('../scene-catalog.js'),P=require('../actor-pet-motion.js'),L=require('../stage-layout.js'),{DialogueDisplay}=require('../caption-layout.js'),{StageEngine}=require('../engine.js');
+const catalog=require('../speeches/2026-120周年校庆/津门风云-9.24-v28-场次.json'),old=require('../speeches/2026-120周年校庆/津门风云-9.24-v26-场次.json'),script=require('../speeches/2026-120周年校庆/津门风云-9.24-v28.json');
+test('new Yu Gong replaces only his formal-scene pose, preserves physical anchors, and has calibrated animation',()=>{
+ const poses=new Set();catalog.maps.forEach((m,k)=>m.scenes.forEach((s,j)=>{const prior=old.maps[k].scenes[j];assert.equal(s.background,prior.background);assert.deepEqual(s.actors.slice(0,8),prior.actors.slice(0,8));if(!k){assert.deepEqual(s.actors[8],prior.actors[8]);return;}const a=s.actors[8],b=C.actorAnchor(a,s.backgroundAspect),before=C.actorAnchor(prior.actors[8],s.backgroundAspect);for(const key of ['x','y','height','layer'])assert.ok(Math.abs(b[key]-before[key])<1e-9,key);poses.add(a.poses.idle);assert.ok(P.profileFor(a.poses.idle));assert.ok(P.footprintFor(a.poses.idle));assert.equal(a.furniture,false);assert.deepEqual(a.bodyClip,[]);assert.equal(a.personMask,'');assert.equal(a.motion.stationary,true);}));assert.equal(poses.size,1);
+});
+test('continuation cards retain forty percent extra reading time and disappear in speaking order with a small gap',()=>{
+ const f={blocks:[{sentences:[{id:'lead',text:'启动本组。'},{id:'tail',dialogueLead:'lead',text:'演讲者继续解释本组的最后一句内容。'}]}]},d=new DialogueDisplay(f),a={actor:0,cueLine:0,cueKey:'0:lead',text:'先讲话'},b={actor:1,cueLine:1,cueKey:'0:lead',text:'再回应'};
+ d.activate(a.cueKey);d.started(a,0,2000);d.visible(a,0);d.started(b,1600,2000);d.visible(b,1600);d.finished(a,2000);d.finished(b,3600);d.observe({matched:true,confidence:100,index:0,sentenceIndex:1,remaining:10},true,5000);d.tick(60000);assert.equal(d.message({id:0,phase:'idle'},60000),a);assert.equal(d.message({id:1,phase:'idle'},60000),b,'a pause cannot clear either card');
+ d.observe({matched:true,confidence:100,index:0,sentenceIndex:1,remaining:6},true,61000);assert.equal(d.message({id:0,phase:'idle'},85399),a);assert.equal(d.message({id:0,phase:'idle'},85400),null);assert.equal(d.message({id:1,phase:'idle'},85400),b);assert.equal(d.closing(85400),true);assert.equal(d.message({id:1,phase:'idle'},86049),b);assert.equal(d.message({id:1,phase:'idle'},86050),null);assert.equal(d.closing(86500),false);
+});
+test('zero configured stagger cannot make prepared speakers appear together, while the final chorus remains simultaneous',()=>{
+ for(const chorus of [false,true]){const e=new StageEngine(2,2),started=[];e.onMessageStart=m=>started.push({actor:m.actor,at:e.time});e.enqueueDiscussion([0,1].map(actor=>({actor,topic:0,text:'这是一整段台词。',durationMs:5000,staggerMs:0,cueKey:'group',source:'演练预备',ordered:true,chorus})));for(let t=0;t<3000;t+=50)e.step(50);assert.equal(started.length,2);if(chorus)assert.equal(started[1].at,started[0].at);else assert.ok(started[1].at-started[0].at>=800);}
+});
+test('filled pointed tails stay attached and indicate their own speaker without a leader line',()=>{
+ const items=[{id:0,x:700,y:650,width:160,height:200},{id:1,x:1000,y:630,width:150,height:220}],boxes=L.placeBubbles(items,1440,900,{obstacles:[{left:600,top:660,width:540,height:200}]});assert.equal(boxes.length,2);for(const b of boxes){const speaker=items.find(x=>x.id===b.id),t=b.tail;assert.equal(b.detached,false);assert.equal(t.notch.length,3);assert.ok(Math.abs(Math.hypot(t.notch[2][0]-t.notch[0][0],t.notch[2][1]-t.notch[0][1])-6*1.15)<1e-8);assert.deepEqual(t.connector,[]);assert.deepEqual(t.points,[]);const vx=t.handleTip.x-t.handleBase.x,vy=t.handleTip.y-t.handleBase.y;assert.ok(vx*(speaker.x-b.left-t.handleBase.x)+vy*(speaker.y-b.top-t.handleBase.y)>0);}
+
+ const actor=catalog.maps[1].scenes[0].actors[8],figure={x:800,foot:800,width:200,height:300},anchor=L.speechAnchor(figure,actor);assert.ok(anchor.x<figure.x,'staff must not pull the arrow away from the face');
+});
+test('entry requests native fullscreen without navigation UI, hides the button, and Escape exits',async()=>{
+ const s=stage(),viewport=s.document.getElementById('stage-viewport'),button=s.document.getElementById('stage-fullscreen');let request,exits=0;viewport.requestFullscreen=async options=>{request=options;s.document.fullscreenElement=viewport;};s.document.exitFullscreen=async()=>{exits++;s.document.fullscreenElement=null;};
+ await vm.runInContext('fullscreen()',s.context);assert.equal(request.navigationUI,'hide');assert.equal(button.hidden,true);assert.equal(button.textContent,'全屏预览');assert.ok(s.document.getElementById('stage').classList.contains('fullscreen-view'));
+ await vm.runInContext('fullscreen()',s.context);assert.equal(exits,0,'full view has no toggle-to-exit action');
+ for(const fn of s.events.get('keydown'))fn({key:'Escape',target:{closest:()=>false}});await new Promise(r=>setImmediate(r));assert.equal(exits,1);assert.equal(button.hidden,false);assert.equal(s.document.fullscreenElement,null);
+});
+test('latest manuscript and new Yu Gong complete continuous 220 CPM delivery',async()=>{
+ const s=stage({sceneCatalog:catalog});s.command('speech-script',{script});await new Promise(r=>setImmediate(r));s.command('rehearsal-start');for(let t=0;t<1800000;t+=500){s.tick(500);const state=s.posted.at(-1);if(!state.rehearsal.active&&state.cues.length===77&&state.cues.every(c=>c.state==='played')&&!state.queue)break;}
+ const state=s.posted.at(-1);assert.equal(state.cues.length,77);assert.ok(state.cues.every(c=>c.state==='played'));assert.equal(state.cues.reduce((n,c)=>n+c.completed,0),141);assert.equal(state.cueTracking.completed,217);assert.equal(state.cueTracking.missing.length,0);assert.equal(state.queue,0);s.command('clear');
+});

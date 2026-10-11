@@ -1,0 +1,290 @@
+{
+  "sheet": "assets/characters/jinmen-ink-cast-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "columns": 3,
+  "rows": 3,
+  "alpha": "true transparent background; opaque character interior alpha mostly 250–254",
+  "measurement": "Bboxes cover alpha >64 (right/bottom exclusive), eyes manually estimated for subtle overlays; original sheet preserved. Use 2px padding except where it reaches nearby character.",
+  "characters": [
+    {
+      "id": 0,
+      "key": "liang-qichao",
+      "name": "梁启超",
+      "cell": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "bbox": [
+        283,
+        6,
+        411,
+        335
+      ],
+      "eyes": [
+        [
+          57,
+          32
+        ],
+        [
+          70,
+          30
+        ]
+      ],
+      "head": [
+        62,
+        38
+      ]
+    },
+    {
+      "id": 1,
+      "key": "li-hongzhang",
+      "name": "李鸿章",
+      "cell": [
+        512,
+        0,
+        1024,
+        341
+      ],
+      "bbox": [
+        693,
+        4,
+        849,
+        332
+      ],
+      "eyes": [
+        [
+          72,
+          36
+        ],
+        [
+          84,
+          35
+        ]
+      ],
+      "head": [
+        75,
+        40
+      ]
+    },
+    {
+      "id": 2,
+      "key": "yan-fu",
+      "name": "严复",
+      "cell": [
+        1024,
+        0,
+        1536,
+        341
+      ],
+      "bbox": [
+        1124,
+        8,
+        1251,
+        336
+      ],
+      "eyes": [
+        [
+          58,
+          27
+        ],
+        [
+          72,
+          27
+        ]
+      ],
+      "head": [
+        64,
+        36
+      ]
+    },
+    {
+      "id": 3,
+      "key": "li-shutong",
+      "name": "李叔同",
+      "cell": [
+        0,
+        341,
+        512,
+        683
+      ],
+      "bbox": [
+        272,
+        348,
+        404,
+        675
+      ],
+      "eyes": [
+        [
+          63,
+          27
+        ],
+        [
+          75,
+          24
+        ]
+      ],
+      "head": [
+        66,
+        32
+      ]
+    },
+    {
+      "id": 4,
+      "key": "cai-yuanpei",
+      "name": "蔡元培",
+      "cell": [
+        512,
+        341,
+        1024,
+        683
+      ],
+      "bbox": [
+        695,
+        348,
+        825,
+        670
+      ],
+      "eyes": [
+        [
+          53,
+          24
+        ],
+        [
+          67,
+          23
+        ]
+      ],
+      "head": [
+        60,
+        31
+      ]
+    },
+    {
+      "id": 5,
+      "key": "plato",
+      "name": "柏拉图",
+      "cell": [
+        1024,
+        341,
+        1536,
+        683
+      ],
+      "bbox": [
+        1118,
+        346,
+        1263,
+        677
+      ],
+      "eyes": [
+        [
+          68,
+          19
+        ],
+        [
+          79,
+          20
+        ]
+      ],
+      "head": [
+        70,
+        34
+      ]
+    },
+    {
+      "id": 6,
+      "key": "leonardo",
+      "name": "达芬奇",
+      "cell": [
+        0,
+        683,
+        512,
+        1024
+      ],
+      "bbox": [
+        262,
+        682,
+        422,
+        1015
+      ],
+      "eyes": [
+        [
+          71,
+          26
+        ],
+        [
+          85,
+          28
+        ]
+      ],
+      "head": [
+        79,
+        43
+      ]
+    },
+    {
+      "id": 7,
+      "key": "galileo",
+      "name": "伽利略",
+      "cell": [
+        512,
+        683,
+        1024,
+        1024
+      ],
+      "bbox": [
+        689,
+        684,
+        850,
+        1015
+      ],
+      "eyes": [
+        [
+          76,
+          26
+        ],
+        [
+          89,
+          27
+        ]
+      ],
+      "head": [
+        83,
+        40
+      ]
+    },
+    {
+      "id": 8,
+      "key": "yu-gong",
+      "name": "愚公",
+      "cell": [
+        1024,
+        683,
+        1536,
+        1024
+      ],
+      "bbox": [
+        1089,
+        684,
+        1286,
+        1016
+      ],
+      "eyes": [
+        [
+          106,
+          27
+        ],
+        [
+          119,
+          29
+        ]
+      ],
+      "head": [
+        111,
+        42
+      ]
+    }
+  ]
+}
